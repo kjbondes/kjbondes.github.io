@@ -2,4 +2,4 @@
 # a special deploy_dir variable specifies the deployment location using rsync
 
 baseurl: https://kjbondes.github.io
-deploy_dir: git@github.com:kjbondes/kjbondes.github.io.git
+deploy_dir: 
