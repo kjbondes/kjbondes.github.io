@@ -1,0 +1,512 @@
+/* section.scss
+ *
+ * General css for each page
+ * Separated by page id
+ */
+
+section {
+  width: 100%;
+  margin: 0;
+  padding: 10vh 0 5vh 0;
+}
+.transbox {
+  width: 100%;
+  position: relative;
+}
+#home {
+  .title-featured {
+    margin: 20vh auto 10vh auto;
+    @media (min-width: $screenL) {
+      margin-bottom: 0;   // because of the scroll-on-show of project img
+    }
+  }
+  #footer {
+    background-color: $main-color;
+    .icon-hover:hover {
+      background-color: $white-50;
+    }
+  }
+}
+#home-landing-page {
+  width: 100%;
+  .container60 {
+    padding: 20vh 0 10vh 0;
+    @include flex-flow(column, nowrap);
+  }
+  .title-container {
+    z-index: 1;
+    padding: 20px 0;
+    @include flex-flow(column, nowrap);
+  }
+  .title {
+    cursor: none;
+    font-family: $font-main;
+    font-size: 60px;
+    line-height: 1;
+    text-transform: capitalize;
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+  canvas {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  @media (min-width: $screenXS), (min-aspect-ratio: 5/4) {
+    height: 100%;
+    .container60 {
+      padding: 10vh 0;
+      height: 100%;
+    }
+    .title-container {
+      padding: 0;
+      display: block;
+    }
+    .title { 
+      font-size: 60px; 
+      color: white;
+      -webkit-text-stroke: 1px black;
+      text-shadow: 1px 1px black;
+    }
+    h3 {
+      margin-left: 10px;
+    }
+    canvas { display: block; }
+  }
+  @media (min-width: $screenS) {
+    .title { 
+      font-size: 80px;
+      -webkit-text-stroke: 1.2px black;
+      text-shadow: 2px 2px black;
+    }
+  }
+  @media (min-width: $screenL) {
+    .title { 
+      font-size: 120px;
+      -webkit-text-stroke: 1.5px black;
+    }
+  }
+  @media (min-width: $screenXL) {
+    .title { 
+      font-size: 150px;
+      -webkit-text-stroke: 1.8px black;
+    }
+  }
+  @media (max-height: $screenXS) {
+    .title-container { margin-top: 10vh; }
+    canvas { display: none; }
+  }
+}
+#home-projects {
+  .content-container {
+    h2 {
+      margin: 20px 20px 20px 0;
+      max-width: 600px;
+    }
+    h6.text-mark {
+      display: none;
+      margin: 0 0 20px 5px;
+    }
+    .img-none-scroll {
+      width: 100%;
+      margin-bottom: 10vh;
+      img {
+        border-radius: 10px;
+        &:hover {
+          box-shadow: 0 0 10px $black-20;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  .img-container {
+    display: none;
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    img { border-radius: 10px; }
+    #img-home-myoncare, #img-home-shareco, #img-home-yumiwi {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      visibility: hidden;
+      @include transform(visibility 1s 0.25s ease);
+      will-change: transform, visibility;
+      &.is-visible {
+        visibility: visible;
+      }
+      &:hover {
+        img {
+          box-shadow: 0 0 10px $black-20;
+        }
+      }
+    }
+  }
+  .project-tags {
+    padding: 10px 0;
+    .tag {
+      padding: 5px 15px;
+      margin: 0 10px 10px 0;
+      background-color: $bg-grey;
+      border-radius: 5px;
+    }
+    h6.text-mark { 
+      display: inline-block;
+      margin: 0;
+      padding: 5px 15px;
+    }
+  }
+  @media (min-width: $screenS) {
+    .content-container {
+      h6.text-mark { 
+        display: block;
+      }
+    }
+    .project-tags {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      padding: 20px;
+      .tag {
+        background-color: $white-50;
+        color: white;
+      }
+      h6.text-mark { 
+        display: none;
+      }
+    }
+  }
+  @media (min-width: $screenM) {
+    .content-container {
+      height: 100vh; 
+      .img-none-scroll {
+        display: none;
+      }
+    }
+    .img-container {
+      display: flex;
+    }
+  }
+  @media (min-width: $screenL) {
+    .img-container {
+      width: 40%;
+    }
+  }
+}
+.title-more {
+  margin: 15vh auto 10vh auto;
+  .projects-container {
+    .Grid-2 { @include flex(0 0 100%); }
+    .Grid-4 { @include flex(0 0 45%); }
+    .Grid-cell {
+      margin: 0 20px 20px 0;
+      &:nth-child(2), &:nth-child(4) {
+        margin-right: 0;
+      }
+      &:hover {
+        img { 
+          opacity: 0.8;
+          box-shadow: 0 0 10px $black-20;
+        }
+        img#project-logo {
+          box-shadow: none;
+        }
+      }
+      img { border-radius: 10px; }
+    }
+    .project-img {
+      z-index: -1;
+      width: 100%;
+    }
+    .project-hover {
+      padding: 20px 0;
+      border-radius: 10px;
+      img { 
+        margin: 0 0 20px -5px;
+        opacity: 1 !important;
+      }
+      h3 {
+        line-height: 1.2;
+      }
+    }
+    @media (min-width: $screenS) {
+      .project-img { width: 50%; }
+      .project-hover { 
+        width: 50%; 
+        padding-right: 20px;
+      }
+    }
+    @media (min-width: $screenM) {
+      .Grid-2 { @include flex(1); }
+      .Grid-cell:hover {
+        .project-hover { visibility: visible; }
+      }
+      .project-img { width: 100%; }
+      .project-hover { 
+        padding: 20px;
+        position: absolute; 
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $white-80;
+        visibility: hidden;
+      }
+    }
+    @media (min-width: $screenL) {
+      .Grid-4 { @include flex(1); }
+      .Grid-cell:nth-child(2) { margin: 0 20px 20px 0; }
+      .project-hover { padding: 20px 40px; }
+    }
+  }
+}
+.title-contact {
+  margin-top: 15vh;
+  padding: 10vh 0;
+  background-color: $main-color;
+  .profile { 
+    width: 100%;
+    height: 250px;
+    @include order(3); 
+  }
+  .profile-img {
+    cursor: none;
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    @extend %img-cover;
+    background-image: url("../img/profile.jpg");
+    background-position: 80% 50%;
+    @include transform(scale(1));
+    @include transition(transform 0.5s ease);
+    &:hover {
+      @include transform(scale(1.25));
+    }
+  }
+  .Grid-cell { 
+    @include flex(0 0 100%);
+    margin: 0;
+    text-align: center;
+  }
+  .Grid-cell:nth-child(1) { @include order(1); }
+  .Grid-cell:nth-child(3) { @include order(2); }
+  h2 {
+    color: black;
+  }
+  @media (min-width: $screenS) {
+    .profile { 
+      width: 250px;
+      @include order(2); 
+    }
+    .Grid-cell { @include flex(1); }
+    .Grid-cell:nth-child(1) { @include order(1); }
+    .Grid-cell:nth-child(3) { @include order(3); }
+  }
+}
+#project {
+  h3 { 
+    margin-bottom: 40px; 
+  }
+  h4{ 
+    margin-bottom: 20px; 
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+  .hr-60 { 
+    margin: 20vh 0; 
+  }
+  .project-landing-page {
+    height: 100vh;
+    img {
+      margin-top: 35vh;
+    }
+    h1 {
+      margin: 20px 0;
+      max-width: 1000px;
+    }
+  }
+  .overview-img-container {
+    width: 100%;
+    height: 100vh;
+    .overview-img {
+      height: 100%;
+      @extend %img-cover;
+    }
+  }
+  .project-info {
+    .info-title {
+      text-transform: capitalize;
+      color: $black-50;
+    }
+    .info-text {
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-aspect-ratio: 5/4) { 
+    .project-landing-page {
+      height: 85vh;
+      img { 
+        margin-top: 30vh; // mobile portrait
+      }
+    }
+    .overview-img-container {
+      height: 50vh;
+    }
+  }
+  @media (min-width: $screenXS) and (min-height: $screenXS) {
+    .project-landing-page {
+      height: 85vh;
+      img { 
+        margin-top: 40vh;
+      }
+    }
+  }
+}
+
+#myoncare { 
+  #project {
+    h3 { color: $myoncare; }
+    .hr-60 { border-color: $myoncare; }
+    .overview-img-container { background-image: $myoncare-gradient; }
+    .overview-img { background-position: 50% 0%; }
+    a { color: $myoncare !important; }
+  }
+  .mobile-app {
+    background-image: url("../img/myoncare/bg_mobile.png");
+    @extend %img-contain;
+    .Grid-cell {
+      padding: 0 10px;
+    }
+    img {
+      width: auto !important;
+      max-width: 100%;
+      max-height: 60vh;
+    }
+    p {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+  @media (min-width: $screenM) {
+    .mobile-app {
+      img {
+        max-height: 50vh;
+      }
+    }
+  }
+}
+#shareco {
+  #project {
+    h3 { color: $shareco; }
+    .hr-60 { border-color: $shareco; }
+    .overview-img-container { background-image: $shareco-gradient; }
+    .overview-img { background-position: 20% 50%; }
+    a { color: $shareco !important; }
+  }
+  .problem {
+    max-width: calc(33% - 20px);
+    margin: 0 20px 20px 0;
+    position: relative;
+    &:nth-child(3), &:nth-child(5) {
+      margin-right: 0px;
+    }
+  }
+  .problem-hover {
+    width: 100%; 
+    height: 100%;
+    padding: 10px;
+    position: absolute; 
+    background-color: $white-80;
+    border: 3px solid $black-20;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .target-group {
+    .note {
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: $screenXS) {
+    .problem-hover { visibility: visible; }
+  }
+  @media (min-width: $screenM) {
+    .problem {
+      max-width: calc(20% - 20px);
+    }
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+    .target-group {
+      position: relative;
+      .note {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+      }
+    }
+  }
+}
+#yumiwi {
+  #project {
+    h3 { color: $yumiwi; }
+    .hr-60 { border-color: $yumiwi; }
+    .overview-img-container { background-image: $yumiwi-gradient; }
+    .overview-img { background-position: 25% 50%; }
+    a { color: $yumiwi !important; }
+  }
+  .devices-container {
+    @include flex-flow(column-reverse, wrap);
+    a {
+      color: $yumiwi !important;
+    }
+  }
+  .video-container {
+    width: 100%; 
+    height: 100vh;
+    background-image: $yumiwi-gradient;
+  }
+  @media (max-aspect-ratio: 16/9) { 
+    .video-container {
+      height: auto;
+      padding: 40px 0;
+    }
+  }
+  @media (min-width: $screenL) {
+    .devices-container {
+      @include flex-flow(row, nowrap);
+    }
+  }
+}
+
+#about {
+  .profile-container {
+    margin: 20vh auto;
+    @include flex-flow(column-reverse, wrap);
+    .intro { 
+      margin-top: 20px;
+    }
+  }
+  @media (min-width:$screenL) {
+    .profile-container {
+      @include flex-flow(row, nowrap);
+      .profile {
+        flex: 0 0 60%;
+        padding-left: 0;
+      }
+    }
+  }
+}

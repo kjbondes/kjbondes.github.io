@@ -1,0 +1,10 @@
+Rakefile
+Gemfile.lock
+_site/
+_last_deploy.txt
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+
+.DS_Store
