@@ -10,7 +10,7 @@ github_username:  "kjbondes"
 linkedin: "https://www.linkedin.com/in/kuanjupan/"
 xing: "https://www.xing.com/profile/KuanJu_Bondes/"
 
-exclude: ['Gemfile.lock', '.jekyll-cache', 'Rakefile']  
+exclude: ['README', 'Gemfile.lock', '.jekyll-cache', 'Rakefile']  
 
 # Build settings
 markdown: kramdown

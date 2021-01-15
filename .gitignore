@@ -1,5 +1,4 @@
-Rakefile
-Gemfile.lock
+README.md
 _site/
 .sass-cache/
 .jekyll-cache/
