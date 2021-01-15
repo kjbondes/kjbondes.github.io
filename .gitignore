@@ -1,6 +1,6 @@
 Rakefile
 Gemfile.lock
-_last_deploy.txt
+_site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
