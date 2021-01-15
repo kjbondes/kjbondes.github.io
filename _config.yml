@@ -10,7 +10,7 @@ github_username:  "kjbondes"
 linkedin: "https://www.linkedin.com/in/kuanjupan/"
 xing: "https://www.xing.com/profile/KuanJu_Bondes/"
 
-exclude: ['README', 'Gemfile.lock', '.jekyll-cache', 'Rakefile']  
+exclude: ["README", "Gemfile.lock", ".jekyll-cache", "Rakefile"]  
 
 # Build settings
 markdown: kramdown
@@ -26,3 +26,4 @@ plugins:
 # jekyll-multiple-languages-plugin settings:
 languages: ["de", "en"]
 exclude_from_localizations: ["js", "img", "css", "fonts", "download"]
+default_locale_in_subfolder: false
