@@ -6,10 +6,6 @@
 
  /* mobile first < 576px */
 .icon-lang { @extend %img-contain; background-image: url("../img/icon/icon-lang.svg"); }
-.icon-menu { @extend %img-contain; background-image: url("../img/icon/icon-menu.svg"); }
-.icon-mail { @extend %img-contain; background-image: url("../img/icon/icon-mail.svg"); }
-.icon-xing { @extend %img-contain; background-image: url("../img/icon/icon-xing.svg"); }
-.icon-linkedin { @extend %img-contain; background-image: url("../img/icon/icon-linkedin.svg"); }
 
 img#project-logo { width: 135px; height: 30px; }
 
