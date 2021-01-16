@@ -21,9 +21,10 @@ sass:
 
 # Plugins
 plugins:
+  - jekyll-feed
   - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin settings:
 languages: ["de", "en"]
-exclude_from_localizations: ["js", "img", "css", "fonts", "download"]
-default_locale_in_subfolder: false
+exclude_from_localizations: ["css", "js", "img", "fonts", "download"]
+default_locale_in_subfolder: true
