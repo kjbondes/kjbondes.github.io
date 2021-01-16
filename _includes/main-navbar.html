@@ -109,6 +109,24 @@
 </div>
 
 <script>
+    /* icon-menu toggle & body noscroll */
+    $(document).ready(function(){
+        $('#icon-menu').click(function(){
+            $(this).toggleClass('open');
+            $('#main-content').toggleClass('noscroll');
+            $('#mobile-nav').scrollTop = 0;
+            if($(this).hasClass('open')) {
+                $('#mobile-nav').css('position', 'static');
+                $('#mobile-nav').css('overflow-y', 'scroll');
+                $('#mobile-nav').css('min-height', '100%');
+            } else {
+                $('#mobile-nav').css('position', 'fixed');
+                $('#mobile-nav').css('overflow-y', 'hidden');
+                $('#mobile-nav').css('min-height', 'auto');
+            }
+        });
+    });
+
     /* show nav when scroll up */
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
@@ -138,24 +156,4 @@
         prevScrollpos = currentScrollPos;
         console.log('pre:' + prevScrollpos);
     }
-
-    /* icon-menu toggle & body noscroll */
-    $(document).ready(function(){
-        $('#icon-menu').click(function(){
-            $(this).toggleClass('open');
-            $('#main-content').toggleClass('noscroll');
-            $('#mobile-nav').scrollTop = 0;
-
-            if($(this).hasClass('open')) {
-                $('#mobile-nav').css('position', 'static');
-                $('#mobile-nav').css('overflow-y', 'scroll');
-                $('#mobile-nav').css('min-height', '100%');
-            } else {
-                $('#mobile-nav').css('position', 'fixed');
-                $('#mobile-nav').css('overflow-y', 'hidden');
-                $('#mobile-nav').css('min-height', 'auto');
-            }
-
-        });
-    });
 </script>
