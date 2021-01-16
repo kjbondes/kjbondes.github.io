@@ -281,9 +281,9 @@ section {
     width: 200px; 
     height: 200px;
     border-radius: 50%; 
-    @extend %img-cover;
-    background-image: url("../img/profile.jpg");
-    background-position: 80% 50%;
+    //@extend %img-cover;
+    //background-image: url("../img/profile.jpg");
+    //background-position: 80% 50%;
     @include transform(scale(1));
     @include transition(transform 0.5s ease);
     &:hover {
