@@ -7,7 +7,8 @@ $( document ).ready(function(){
   var landingPage = !referrer || referrer.indexOf(hostname) == -1;
 
   if (landingPage && userLang !== "de") {
-    window.location.href = 'https://kjbondes.github.io/en';
+    window.location = '/en';
+    //window.location.href = 'https://kjbondes.github.io/en';
   }
 })
 
