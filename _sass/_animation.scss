@@ -13,7 +13,7 @@
         opacity: 1;
         left: 8px;
         @include transform(rotate(0deg));
-        @include transition(all 0.5s ease-in-out);
+        @include transition(all 0.3s ease-in-out);
     }
     span:nth-child(1) {
         top: 15px;
