@@ -135,10 +135,14 @@
         var nav = document.getElementById("nav");
         var mobileNav = document.getElementById("mobile-nav");
         if (currentScrollPos < '80') {
+            nav.style.top = "0";
             nav.classList.remove('nav-scrollup');
+            mobileNav.style.top = "0";
             mobileNav.classList.remove('nav-scrollup');
         } else if (prevScrollpos > currentScrollPos) {
+            nav.style.top = "0";
             nav.classList.add('nav-scrollup');
+            mobileNav.style.top = "0";
             mobileNav.classList.add('nav-scrollup');
         } else {
             nav.style.top = "-100px";
