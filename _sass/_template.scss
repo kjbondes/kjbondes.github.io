@@ -285,7 +285,7 @@ mark, %mark {
   width: 100%;
   position: fixed;
   top: 0;
-  @include transition(all 0.3s ease);
+  @include transition(top 0.3s ease);
 }
 #nav {
   display: none;
@@ -357,6 +357,16 @@ mark, %mark {
   }
   @media (min-width: $screenS) {
     display: none;
+  }
+}
+.nav-scrollup {
+  top: 0;
+  background-color: white;
+  box-shadow: 0px 2px #F9F9F9;
+  padding: 5px 0 !important;
+  #nav-logo {
+    h2 { font-size: 24px !important; }
+    h6 { font-size: 12px !important; }
   }
 }
 #footer {
