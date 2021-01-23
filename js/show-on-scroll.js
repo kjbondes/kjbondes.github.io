@@ -11,16 +11,30 @@ var scroll = window.requestAnimationFrame ||
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
 function loop() {
+  let bgColor = 'transparent';
   Array.prototype.forEach.call(elementsToShow, function(element){
+    let elementPic = 'img-' + element.id;
+    let elementId = element.id.slice(5);
     if (isElementInViewport(element)) {
-      let elementPic = 'img-' + element.id;
+      switch (elementId) {
+        case 'myoncare' : 
+          bgColor = '#FAE9F1';
+          break;
+        case 'shareco' :
+          bgColor = '#FDF0E9';
+          break;
+        case 'yumiwi' :
+          bgColor = '#FAEDEC';
+          break;
+        default :
+          bgColor = 'transparent';
+      }
       document.getElementById(elementPic).classList.add('is-visible');
     } else {
-      let elementPic = 'img-' + element.id;
       document.getElementById(elementPic).classList.remove('is-visible');
     }
   });
-
+  document.body.style.backgroundColor = bgColor;
   scroll(loop);
 }
 

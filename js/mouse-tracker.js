@@ -46,9 +46,7 @@
 }).call(this);
 
 var cursorShow = function (cursorType) {
-    //setTimeout(function () {
-        $('#cursor').addClass(cursorType);
-    //},300);    
+    $('#cursor').addClass(cursorType);
 };
 var cursorHide = function (cursorType) {
     $('#cursor').removeClass(cursorType);
