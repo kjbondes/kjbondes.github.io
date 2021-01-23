@@ -230,6 +230,9 @@ mark, %mark {
   &.in:hover {
     background-size: 100% 100%;
   }
+  &.in.active:hover {
+    background: none;
+  }
   &.in::after {
     content: '';
     display: block;
