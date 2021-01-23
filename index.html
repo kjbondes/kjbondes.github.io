@@ -18,7 +18,7 @@ description :
 </div>
 
 <div class="title-featured container60">
-    <h2><mark>{% t home.featured %}</mark></h2>
+    <h2>{% t home.featured %}</h2>
 </div>
 <div id="home-projects" class="container60 Grid">
     <div class="Grid-cell">
@@ -69,11 +69,11 @@ description :
 
 <!-- move the project to actuell page -->
 <div class="title-more container60">
-    <h2><mark>{% t home.more %}</mark></h2>
-    <h3 style="margin: 20px 0;">
+    <h2>{% t home.more %}</h2>
+    <h4 style="margin: 20px 0;">
         {% t home.more-text %} – 
         <a href="https://kuanjupan.wixsite.com/kj-pan/p-r-o-j-e-k-t-e" target="_blank"><mark>KJ PAN</mark></a>
-    </h3>
+    </h4>
     <div class="projects-container Grid">
         {% for more in site.data.projects-more %}
             <a class="Grid-cell Grid-4" href="https://kuanjupan.wixsite.com/kj-pan/{{ more.id }}" target="_blank" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')">
@@ -87,7 +87,7 @@ description :
 <div class="title-contact">
     <div class="container60 Grid Grid--middle">
         <a class="Grid-cell" href="{{ site.baseurl }}/about.html">
-            <h2 class="text-hover">{% t home.contact-about %}</h2>
+            <h2 class="text-hover out">{% t home.contact-about %}</h2>
         </a>
         <div class="Grid Grid--center Grid--middle profile">
             <div class="profile-img" onmousemove="cursorShow('cursor-wave')" onmouseout="cursorHide('cursor-wave')">
@@ -95,7 +95,7 @@ description :
             </div>
         </div>
         <a class="Grid-cell" href="mailto: {{ site.email}}">
-            <h2 class="text-hover">{% t home.contact-mail %}</h2>
+            <h2 class="text-hover out">{% t home.contact-mail %}</h2>
         </a>
     </div>
 </div>

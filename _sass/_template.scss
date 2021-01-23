@@ -185,7 +185,7 @@ mark, %mark {
     white-space: nowrap;
     z-index: 1;
     &.text {
-      margin: 10px auto 10px -20px;
+      margin: 5px auto 5px -20px;
       img {
         height: 20px;
         margin: 0 0 5px -10px;
@@ -241,11 +241,21 @@ mark, %mark {
     }
   }
 }*/
-.text-hover { // underline-in
+.text-hover { // underline-in & -out
   display: inline-block;
   margin: 0 20px;
   padding: 10px 0;
-  &::after {
+  &.in { // same style as mark but without line before hover
+    padding: 5px 0;
+    background-image: linear-gradient(180deg, transparent 65%, $main-color 0%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    @include transition(background-size 0.3s ease);
+  }
+  &.in:hover {
+    background-size: 100% 100%;
+  }
+  &.in::after {
     content: '';
     display: block;
     width: 0%;
@@ -253,11 +263,22 @@ mark, %mark {
     background: black;
     @include transition(width 0.3s ease);
   }
-  &:hover::after {
+  &.in.active::after {
     width: 100%;
   }
-  &.active::after {
+  &.out::after {
+    content: '';
+    display: block;
     width: 100%;
+    height: 1px;
+    background: black;
+    @include transition(width 0.3s ease);
+  }
+  &.out:hover::after {
+    width: 0%;
+  }
+  &.out.active::after {
+    width: 0%;
   }
 }
 .icon-hover {
@@ -265,7 +286,7 @@ mark, %mark {
   background-color: transparent;
   @include transition(background-color .3s ease);
   &:hover {
-    background-color: $bg-grey;
+    background-color: $main-color;
   }
 }
 .noscroll { // prevent main-content scroll while menu is opened

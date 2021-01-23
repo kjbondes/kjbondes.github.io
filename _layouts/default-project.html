@@ -37,25 +37,25 @@ layout: default
             </div>
         </div>
         
-        <div class="hr-60"></div>
+        <div class="hr hr-60"></div>
 
         {{ content }}
 
-        <div class="hr-60"></div>
+        <div class="hr hr-60"></div>
 
     {% endif %}
 {% endfor %}
 </div>
 
 <div class="title-more container60">
-    <h2 style="margin-bottom: 40px;"><mark>{% t home.more %}</mark></h2>
+    <h2 style="margin-bottom: 40px;">{% t home.more %}</h2>
     <div class="projects-container Grid">
         {% for other in site.data.projects %}
             {% if other.id != page.id %}
             <a class="Grid-cell Grid-2 Grid Grid--middle transbox" href="{{ site.baseurl }}/projects/{{ other.id }}.html" style="margin-bottom: 10vh;" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')">
                 <div class="project-hover Grid-column Grid-column--middle">
                     <img id="project-logo" src="{{ site.baseurl_root }}/img/logo/{{ other.logo }}.svg" />
-                    <h3>{% t other.summary %}</h3>
+                    <h4>{% t other.summary %}</h4>
                 </div>
                 <img class="project-img" src="{{ site.baseurl_root }}/img/{{ other.id }}/project-{{ other.id }}-mobile.jpg" />
             </a>
