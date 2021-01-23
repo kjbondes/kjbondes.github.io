@@ -179,9 +179,9 @@ mark, %mark {
     display: none;
     position: absolute;
     padding: 10px 0;
-    background-color: $white-90;
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 4px 0 $light-grey-60;
+    box-shadow: 0 0 4px 0 $black-20;
     white-space: nowrap;
     z-index: 1;
     &.text {
