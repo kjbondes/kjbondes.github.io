@@ -23,7 +23,7 @@ description :
 <div id="home-projects" class="container60 Grid">
     <div class="Grid-cell">
         {% for project in site.data.projects %}
-            <div class="content-container Grid Grid--middle">
+            <div class="content-container Grid-column Grid-column--middle">
                 <div id="home-{{ project.id }}" class="show-on-scroll">
                     <img id="project-logo" src="{{ site.baseurl_root }}/img/logo/{{ project.logo }}.svg" />
                     <h2>{% t project.summary %}</h2>
@@ -33,16 +33,16 @@ description :
                 </div>
                 <a class="transbox img-none-scroll" href="{{ site.baseurl }}/projects/{{ project.id }}.html">
                     <img src="{{ site.baseurl_root }}/img/{{ project.id }}/project-{{ project.id }}-mobile.jpg" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')"/>
-                    <div class="project-tags Grid Grid--spaceBetween">
-                        <div class="Grid-cell Grid">
+                    <div class="project-tags">
+                        <div class="Grid">
                         {% assign x = project.tags.size | minus: 1 %}
                         {% for i in (0..x) %}
                             <h6 class="tag">{% t project.tags[i] %}</h6>
                         {% endfor %}
                         </div>
-                        <div class="Grid Grid--right">
+                        <!--div class="Grid Grid--right">
                             <h6 class="text-mark"><mark>{% t home.view %}</mark></h6>
-                        </div>
+                        </div-->
                     </div>
                 </a>
             </div>

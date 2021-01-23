@@ -105,13 +105,14 @@ section {
 }
 #home-projects {
   .content-container {
+    min-height: 100vh;
     h2 {
       margin: 20px 20px 20px 0;
       max-width: 600px;
     }
     h6.text-mark {
-      display: none;
-      margin: 0 0 20px 5px;
+      //display: none;
+      margin: 0 0 40px 5px;
     }
     .img-none-scroll {
       width: 100%;
@@ -169,6 +170,9 @@ section {
       h6.text-mark { 
         display: block;
       }
+      .img-none-scroll {
+        margin-bottom: 20vh;
+      }
     }
     .project-tags {
       position: absolute; 
@@ -186,7 +190,6 @@ section {
   }
   @media (min-width: $screenM) {
     .content-container {
-      height: 100vh; 
       .img-none-scroll {
         display: none;
       }
