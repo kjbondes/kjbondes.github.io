@@ -15,82 +15,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* text highlight */
-mark, %mark {
-  color: inherit;
-  padding: 5px 0;
-  border-bottom: 1px solid black;
-  background-color: transparent;
-  background-image: linear-gradient(180deg, transparent 65%, $main-color 0%);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  @include transition(background-size 0.3s ease);
-  &:hover {
-    border-bottom: none;
-    background-size: 100% 100%;
-  }
-}
-
-/* cursor */
-#follower {
-  display: none;
-  position: fixed;
-  pointer-events: none;
-  .cursor {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    margin-top: -40px;
-    margin-left: -40px;
-    color: transparent;
-    border-radius: 50%;
-    background-color: $main-color;
-    opacity: 1;
-    @include transform(scale(0.15));
-    @include transition(transform 0.3s ease);
-  }
-  .cursor-web {
-    z-index: -999;
-    opacity: 0.5;
-    @include transform(scale(3));
-    background-color: $yumiwi;
-  }
-  .cursor-app {
-    z-index: -999;
-    opacity: 0.5;
-    @include transform(scale(2.5));
-    background-color: $myoncare;
-  }
-  .cursor-product {
-    z-index: -999;
-    opacity: 0.5;
-    @include transform(scale(3.5));
-  }
-  .cursor-text {
-    z-index: 999;
-    opacity: 0.8;
-    @include transform(scale(1));
-    h6 {
-      color: black;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      @extend %Grid, %Grid--center, %Grid--middle;
-    }
-  }
-  .cursor-wave {
-    @include transform(scale(1));
-    background-color: transparent;
-    background-image: url('../img/icon/wave.gif');
-    @extend %img-contain;
-  }
-  @media only screen {
-    display: block;
-  }
-}
-
 /* basic grid */
+body {
+  background-color: transparent;
+  @include transition(background-color 1s ease);
+}
 .container60 {
   width: calc(100% - 40px);
   margin: 0 auto;
@@ -171,6 +100,78 @@ mark, %mark {
     width: 80%;
   }
 }
+/* text highlight */
+mark, %mark {
+  color: inherit;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, transparent 65%, $main-color 0%);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  @include transition(background-size 0.3s ease);
+  &:hover {
+    border-bottom: none;
+    background-size: 100% 100%;
+  }
+}
+/* cursor */
+#follower {
+  display: none;
+  position: fixed;
+  pointer-events: none;
+  .cursor {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    color: transparent;
+    border-radius: 50%;
+    background-color: $main-color;
+    opacity: 1;
+    @include transform(scale(0.15));
+    @include transition(transform 0.3s ease);
+  }
+  .cursor-web {
+    z-index: -999;
+    opacity: 0.5;
+    @include transform(scale(3));
+    background-color: $yumiwi;
+  }
+  .cursor-app {
+    z-index: -999;
+    opacity: 0.5;
+    @include transform(scale(2.5));
+    background-color: $myoncare;
+  }
+  .cursor-product {
+    z-index: -999;
+    opacity: 0.5;
+    @include transform(scale(3.5));
+  }
+  .cursor-text {
+    z-index: 999;
+    opacity: 0.8;
+    @include transform(scale(1));
+    h6 {
+      color: black;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      @extend %Grid, %Grid--center, %Grid--middle;
+    }
+  }
+  .cursor-wave {
+    @include transform(scale(1));
+    background-color: transparent;
+    background-image: url('../img/icon/wave.gif');
+    @extend %img-contain;
+  }
+  @media only screen {
+    display: block;
+  }
+}
 /* components */
 .dropdown {
   position: relative;
@@ -215,32 +216,6 @@ mark, %mark {
     }
   }
 }
-/* tooltips top, right, bottom, left */
-/*.tooltip {
-  position: relative;
-  opacity: 1;
-  .tooltip-text {
-    text-align: center;
-    text-transform: capitalize !important;
-    width: 80px; //
-    border-radius: 5px;
-    padding: 5px 10px;
-    opacity: 0;
-    @include transition(opacity 0.5s ease);
-    position: absolute;
-    z-index: 1;
-    &.bottom {
-      top: 100%;
-      left: 50%;
-      margin-left: -40px;
-    }
-  }
-  &:hover {
-    .tooltip-text {
-      opacity: 1;
-    }
-  }
-}*/
 .text-hover { // underline-in & -out
   display: inline-block;
   margin: 0 20px;

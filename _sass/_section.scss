@@ -177,11 +177,11 @@ section {
       top: 0;
       right: 0;
       bottom: 0;
-      visibility: hidden;
-      @include transform(visibility 1s 0.25s ease);
-      will-change: transform, visibility;
+      opacity: 0;
+      @include transition(opacity 0.25s ease);
+      will-change: opacity;
       &.is-visible {
-        visibility: visible;
+        opacity: 1;
       }
       &:hover {
         img {
