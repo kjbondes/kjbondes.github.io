@@ -196,7 +196,7 @@ section {
     .tag {
       padding: 5px 15px;
       margin: 0 10px 10px 0;
-      background-color: $bg-grey;
+      background-color: $white-50;
       color: $black-50;
       border-radius: 5px;
     }
@@ -221,7 +221,6 @@ section {
       left: 0; 
       padding: 20px;
       .tag {
-        background-color: $white-50;
         color: white;
       }
       h6.text-mark { 
