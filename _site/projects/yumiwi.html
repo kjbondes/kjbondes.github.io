@@ -51,7 +51,7 @@
             </a>
         </div>
         <div id="nav-right" class="Grid Grid--middle">
-            <div class="nav-item dropdown text-hover active">
+            <div class="nav-item dropdown text-hover in active">
                 <div class="dropbtn">
                     <h6>Projekte</h6>
                 </div>
@@ -75,10 +75,10 @@
                 </div>
             </div>
             <a href="/about.html">
-                <h6 class="nav-item text-hover ">Über mich</h6>
+                <h6 class="nav-item text-hover in ">Über mich</h6>
             </a>
             <a href="/download/de/KJBondes.pdf" target="_blank">
-                <h6 class="nav-item text-hover">Lebenslauf</h6>
+                <h6 class="nav-item text-hover in">Lebenslauf</h6>
             </a>
             <div class="nav-item dropdown">
                 <div class="icon-lang icon50-r icon-hover"></div>
@@ -184,9 +184,10 @@
     $(document).ready(function(){
         $('#icon-menu').click(function(){
             $(this).toggleClass('open');
-            $('#main-content').toggleClass('noscroll');
+            var menuOpen = $(this).hasClass('open');
+            $('#main-content').toggleClass('noscroll', menuOpen);
             $('#mobile-nav').scrollTop = 0;
-            if($(this).hasClass('open')) {
+            if (menuOpen) {
                 $('#mobile-nav').css('position', 'static');
                 $('#mobile-nav').css('overflow-y', 'scroll');
                 $('#mobile-nav').css('min-height', '100%');
@@ -204,28 +205,23 @@
         var currentScrollPos = window.pageYOffset;
         var nav = document.getElementById("nav");
         var mobileNav = document.getElementById("mobile-nav");
-        if (prevScrollpos < '20') {
+        if (currentScrollPos < '80') {
             nav.style.top = "0";
-            nav.style.backgroundColor = "transparent";
-            nav.style.boxShadow = "0px 0px transparent";
+            nav.classList.remove('nav-scrollup');
             mobileNav.style.top = "0";
+            mobileNav.classList.remove('nav-scrollup');
         } else if (prevScrollpos > currentScrollPos) {
             nav.style.top = "0";
-            nav.style.backgroundColor = "white";
-            nav.style.boxShadow = "0px 2px #F9F9F9";
+            nav.classList.add('nav-scrollup');
             mobileNav.style.top = "0";
-            mobileNav.style.backgroundColor = "white";
-            mobileNav.style.boxShadow = "0px 2px #F9F9F9";
+            mobileNav.classList.add('nav-scrollup');
         } else {
             nav.style.top = "-100px";
-            nav.style.backgroundColor = "transparent";
-            nav.style.boxShadow = "0px 0px transparent";
+            nav.classList.remove('nav-scrollup');
             mobileNav.style.top = "-100px";
-            mobileNav.style.backgroundColor = "transparent";
-            mobileNav.style.boxShadow = "0px 0px transparent";
+            mobileNav.classList.remove('nav-scrollup');
         }
         prevScrollpos = currentScrollPos;
-        console.log('pre:' + prevScrollpos);
     }
 </script>
 
@@ -284,7 +280,7 @@
             </div>
         </div>
         
-        <div class="hr-60"></div>
+        <div class="hr hr-60"></div>
 
         <!-- DESIGN PROCESS -->
 <!-- competitors analysis -->
@@ -376,7 +372,7 @@
     <p class="note" style="margin-top: 20px;">Navigation über Wörter und Piktogramme, zentrierte Anordnung wegen der arabischen Sprachen.</p>
 </div>
     
-<div class="hr-60"></div>
+<div class="hr hr-60"></div>
 
 <!-- DESIGN RESULT -->
 <!-- prototypes -->
@@ -401,21 +397,21 @@
 <!-- mockups -->
 <img src="/img/yumiwi/mockups.jpg" />
 
-        <div class="hr-60"></div>
+        <div class="hr hr-60"></div>
 
     
 
 </div>
 
 <div class="title-more container60">
-    <h2 style="margin-bottom: 40px;"><mark>Mehr Projekte</mark></h2>
+    <h2 style="margin-bottom: 40px;">Mehr Projekte</h2>
     <div class="projects-container Grid">
         
             
             <a class="Grid-cell Grid-2 Grid Grid--middle transbox" href="/projects/myoncare.html" style="margin-bottom: 10vh;" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')">
                 <div class="project-hover Grid-column Grid-column--middle">
                     <img id="project-logo" src="/img/logo/logo-myoncare.svg" />
-                    <h3>Digitale Gesundheitsplattform zur effizienten und bedarfsorientierten Patientenversorgung</h3>
+                    <h4>Digitale Gesundheitsplattform zur effizienten und bedarfsorientierten Patientenversorgung</h4>
                 </div>
                 <img class="project-img" src="/img/myoncare/project-myoncare-mobile.jpg" />
             </a>
@@ -425,7 +421,7 @@
             <a class="Grid-cell Grid-2 Grid Grid--middle transbox" href="/projects/shareco.html" style="margin-bottom: 10vh;" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')">
                 <div class="project-hover Grid-column Grid-column--middle">
                     <img id="project-logo" src="/img/logo/logo-shareco.svg" />
-                    <h3>Konzeptentwurf einer individuellen, umweltfreundlichen und benutzerfreundlichen Waschmaschine zur gemeinschaftlichen Nutzung</h3>
+                    <h4>Konzeptentwurf einer individuellen, umweltfreundlichen und benutzerfreundlichen Waschmaschine zur gemeinschaftlichen Nutzung</h4>
                 </div>
                 <img class="project-img" src="/img/shareco/project-shareco-mobile.jpg" />
             </a>
@@ -438,7 +434,7 @@
       <div id="footer" class="Grid Grid--center Grid--middle">
     <div id="footer-text" class="Grid Grid--middle">
         <a class="footer-web" href="mailto: kuanju.bondes@posteo.de">
-            <h6 class="text-hover">kuanju.bondes@posteo.de</h6>
+            <h6 class="text-hover in">kuanju.bondes@posteo.de</h6>
         </a>
         <h6 class="footer-web" style="margin: 0 20px 0 10px;"> | </h6>
         <h6>© <span id="theYear"></span> KJ Bondes</h6>
@@ -446,13 +442,19 @@
     </div>
     <div id="footer-icons" class="Grid Grid--center">
         <a href="https://www.linkedin.com/in/kuanjupan/" target="_blank">
-            <div class="icon-linkedin icon50-r icon-hover"></div>
+            <div class="icon50-r icon-hover">
+                <img src="/img/icon/icon-linkedin.svg" />
+            </div>
         </a>
         <a href="https://www.xing.com/profile/KuanJu_Bondes/" target="_blank">
-            <div class="icon-xing icon50-r icon-hover"></div>
+            <div class="icon50-r icon-hover">
+                <img src="/img/icon/icon-xing.svg" />
+            </div>
         </a>
         <a href="mailto: kuanju.bondes@posteo.de">
-            <div class="icon-mail icon50-r icon-hover"></div>
+            <div class="icon-mail icon50-r icon-hover">
+                <img src="/img/icon/icon-mail.svg" />
+            </div>
         </a>
     </div>
 </div>
