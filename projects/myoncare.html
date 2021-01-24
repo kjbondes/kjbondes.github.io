@@ -205,21 +205,33 @@
         var currentScrollPos = window.pageYOffset;
         var nav = document.getElementById("nav");
         var mobileNav = document.getElementById("mobile-nav");
-        if (currentScrollPos < '80') {
-            nav.style.top = "0";
-            nav.classList.remove('nav-scrollup');
-            mobileNav.style.top = "0";
-            mobileNav.classList.remove('nav-scrollup');
-        } else if (prevScrollpos > currentScrollPos) {
-            nav.style.top = "0";
-            nav.classList.add('nav-scrollup');
-            mobileNav.style.top = "0";
-            mobileNav.classList.add('nav-scrollup');
+        if ($('body').attr('id') == 'home') {
+            if (currentScrollPos < '80') {
+                nav.style.top = "0";
+                mobileNav.style.top = "0";
+            } else {
+                nav.style.top = "-100px";
+                nav.classList.remove('nav-scrollup');
+                mobileNav.style.top = "-100px";
+                mobileNav.classList.remove('nav-scrollup');
+            }
         } else {
-            nav.style.top = "-100px";
-            nav.classList.remove('nav-scrollup');
-            mobileNav.style.top = "-100px";
-            mobileNav.classList.remove('nav-scrollup');
+            if (currentScrollPos < '80') {
+                nav.style.top = "0";
+                nav.classList.remove('nav-scrollup');
+                mobileNav.style.top = "0";
+                mobileNav.classList.remove('nav-scrollup');
+            } else if (prevScrollpos > currentScrollPos) {
+                nav.style.top = "0";
+                nav.classList.add('nav-scrollup');
+                mobileNav.style.top = "0";
+                mobileNav.classList.add('nav-scrollup');
+            } else {
+                nav.style.top = "-100px";
+                nav.classList.remove('nav-scrollup');
+                mobileNav.style.top = "-100px";
+                mobileNav.classList.remove('nav-scrollup');
+            }
         }
         prevScrollpos = currentScrollPos;
     }
