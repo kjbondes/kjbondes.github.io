@@ -529,7 +529,6 @@ section {
     .skill {
       position: relative;
       width: 40%;
-      margin-right: 20px;
       .bg-white {
         z-index: -1;
         position: absolute;
@@ -552,6 +551,9 @@ section {
   }
   @media (min-width: $screenXS) {
     .skill-container {
+      .skill {
+        margin-right: 20px;
+      }
       .Grid-cell {
         @include flex(1);
         h5, h6 { text-align: left; }  
