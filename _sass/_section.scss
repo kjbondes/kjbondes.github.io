@@ -413,7 +413,7 @@ section {
     a { color: $shareco !important; }
   }
   .problem {
-    max-width: calc(33% - 20px);
+    width: calc(33% - 20px);
     margin: 0 20px 20px 0;
     position: relative;
     &:nth-child(3), &:nth-child(5) {
@@ -445,10 +445,10 @@ section {
   }
   @media (min-width: $screenM) {
     .problem {
-      max-width: calc(20% - 20px);
-    }
-    &:nth-child(3) {
-      margin-right: 20px;
+      width: calc(20% - 20px);
+      &:nth-child(3) {
+        margin-right: 20px;
+      }
     }
     .target-group {
       position: relative;
