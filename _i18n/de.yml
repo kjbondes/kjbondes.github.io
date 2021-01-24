@@ -4,6 +4,18 @@ title :
   yumiwi : yumiwi
   about : About me
 
+nav : 
+  product : Produkt
+  projects : Projekte
+  about : Über mich
+  resume : Lebenslauf
+  lang : Sprache
+  download-en : Herunterladen auf Englisch
+  download-de : Herunterladen auf Deutsch
+  myoncare : "Digitale <br/>Gesundheitsplattform"
+  shareco : "Konzeptentwurf einer <br/>Gemeinschaftswaschmaschine"
+  yumiwi : "Onlineplattform zur <br/>Veranstaltungsorganisation"
+
 home : 
   web : Web
   app : App
@@ -17,21 +29,6 @@ home :
   contact-mail : "Mir eine Nachricht schreiben"
   view : "Projekt ansehen"
   view-cursor : "an<br>sehen"
-
-about : 
-  more : "Mehr Details in meinem "
-
-nav : 
-  product : Produkt
-  projects : Projekte
-  about : Über mich
-  resume : Lebenslauf
-  lang : Sprache
-  download-en : Herunterladen auf Englisch
-  download-de : Herunterladen auf Deutsch
-  myoncare : "Digitale <br/>Gesundheitsplattform"
-  shareco : "Konzeptentwurf einer <br/>Gemeinschaftswaschmaschine"
-  yumiwi : "Onlineplattform zur <br/>Veranstaltungsorganisation"
 
 tag : 
   ux : "UX Design"
@@ -51,8 +48,9 @@ info :
   designer : Designer
   role : Role
 
-profile : 
+about : 
   intro : "Ich bin eine Produkt Designerin mit einem tiefen technischen Verständnis und einem guten Gespür für Zukunftstendenzen."
+  more : "Mehr Details in meinem "
 
 myoncare : 
   summary : "Digitale Gesundheitsplattform zur effizienten und bedarfsorientierten Patientenversorgung"
@@ -103,9 +101,9 @@ shareco :
   result-title : "SHARECO – ökonomisch & ökologisch"
   result-text-1 : "Der Entwurf beinhaltet unter anderem eine automatische Größenanpassung der Trommel an die Wäschemenge, Optimierungen hinsichtlich der Ergonomie sowie eine Vernetzung mit mobilen Geräten."
   result-text-2 : "Das Ergebnis stellt somit eine Verbesserung der klassischen Gemeinschaftswaschmaschine hinsichtlich Ergonomie und Bequemlichkeit dar. So soll es ermöglichen, dass Anreize für eine gemeinsame Nutzung geschaffen werden, die Bereitschaft zum Teilen an andere Personen weitergegeben werden und die Natur geschützt wird. Mehr Inhalte über Designprozess von der Waschmaschine siehe bitte <a href='https://kuanjupan.wixsite.com/kj-pan/shareco' target='_blank'><mark>hier</mark></a>."
-  reflection : ""
-  reflection-title : ""
-  reflection-text : ""
+  reflection : "Reflexion"
+  reflection-title : "Reflexion-Titel"
+  reflection-text : "Reflexion-Inhalt"
 
 yumiwi : 
   summary : "Onlineplattform zur einfachen Organisation eines Kochenevents"

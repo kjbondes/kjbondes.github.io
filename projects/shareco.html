@@ -15,7 +15,7 @@ description :
             <div class="Grid Grid--center Grid--middle problem-hover">
                 <h5>{% t shareco.problem-{{i}} %}</h5>
             </div>
-            <img src="{{ site.baseurl_root }}/img/shareco/problem_{{i}}.png" />
+            <img src="{{ site.baseurl_root }}/img/shareco/problems/problem_{{i}}.png" />
         </div>
         {% endfor %}  
     </div>
@@ -81,8 +81,33 @@ description :
         <div class="flex30"></div>
     </div>
     <div class="block10vh"></div>
-    <img src="{{ site.baseurl_root }}/img/shareco/result.jpg" />
+    <!-- product -->
+    <img src="{{ site.baseurl_root }}/img/shareco/result_product.jpg" />
     <div class="block10vh"></div>
-    <!-- TODO: workflow carousel -->
-    <!-- TODO: ui mockups -->
+    <!-- scenarios -->
+    <img src="{{ site.baseurl_root }}/img/shareco/result_scenarios.jpg" />
+    <div class="block10vh"></div>
+    <!-- ui use cases -->
+    {% include carousel/shareco-use-cases.html %}
+    <div class="block10vh"></div>
 </div>
+<!-- ui mockups -->
+<div class="ui-container">
+    <div class="container60 Grid Grid--center Grid--middle" style="height: 100%;">
+        <img src="{{ site.baseurl_root }}/img/shareco/result_app.png">
+    </div>
+</div>
+<!-- REFLECTION -->
+<!--div class="block20vh"></div>
+<div class="container60">
+    <div class="Grid">
+        <div class="flex50">
+            <h6>{% t shareco.reflection %}</h6>
+            <h3>{% t shareco.reflection-title %}</h3>
+            <h4>{% t shareco.reflection-text %}</h4>
+        </div>
+        <div class="flex50">
+            <img src="{{ site.baseurl_root }}/img/shareco/reflection.jpg" />
+        </div>
+    </div>
+</div-->

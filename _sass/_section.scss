@@ -182,10 +182,12 @@ section {
       right: 0;
       bottom: 0;
       opacity: 0;
-      @include transition(opacity 0.25s ease);
-      will-change: opacity;
+      visibility: hidden; // object must be hidden -> link to the right project
+      @include transition(opacity 0.25s ease, visibility 0.25s ease);
+      will-change: opacity, visibility;
       &.is-visible {
         opacity: 1;
+        visibility: visible;
       }
       &:hover {
         img {
@@ -445,6 +447,12 @@ section {
       margin-top: 20px;
     }
   }
+  .ui-container {
+    width: 100%; 
+    height: 100vh;
+    background-image: $shareco-gradient;
+    img { max-width: 80%; }
+  }
   @media (min-width: $screenXS) {
     .problem-hover { visibility: visible; }
   }
@@ -463,6 +471,12 @@ section {
         left: 0;
         width: 35%;
       }
+    }
+  }
+  @media (max-aspect-ratio: 16/9) { 
+    .ui-container {
+      height: auto;
+      padding: 40px 0;
     }
   }
 }

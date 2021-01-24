@@ -4,6 +4,18 @@ title :
   yumiwi : yumiwi
   about : About me
 
+nav : 
+  product : product
+  projects : work
+  about : about
+  resume : resume
+  lang : language
+  download-en : Download in English
+  download-de : Download in German
+  myoncare : "Degital healthcare platform"
+  shareco : "Concept of shared washing mashine"
+  yumiwi : "Online event-organization platform"
+
 home : 
   web : web
   app : app
@@ -17,21 +29,6 @@ home :
   contact-mail : "Drop me a message"
   view : "view project"
   view-cursor : "view"
-
-about : 
-  more : "More details in my "
-
-nav : 
-  product : product
-  projects : work
-  about : about
-  resume : resume
-  lang : language
-  download-en : Download in English
-  download-de : Download in German
-  myoncare : "Degital healthcare platform"
-  shareco : "Concept of shared washing mashine"
-  yumiwi : "Online event-organization platform"
 
 tag : 
   ux : "UX Design"
@@ -51,8 +48,9 @@ info :
   designer : designer
   role : role
 
-profile :
+about : 
   intro : "I am a Product designer with a deep technical understanding and a good sense for future trends."
+  more : "More details in my "
 
 myoncare : 
   summary : "Digital healthcare platform for efficient and demand-oriented patient care"
@@ -103,9 +101,9 @@ shareco :
   result-title : "SHARECO - economical & ecological"
   result-text-1 : "Among other things, the design includes an automatic volume adjustment of the drum to the amount of laundry, optimizations with regard to ergonomics and networking with mobile devices."
   result-text-2 : "The result is an improvement of the classic shared washing machine in terms of ergonomics and convenience. This should make it possible to create incentives for shared use, pass on the willingness to share to other people and protect nature."
-  reflection : ""
-  reflection-title : ""
-  reflection-text : ""
+  reflection : "Reflection"
+  reflection-title : "Reflection title"
+  reflection-text : "Reflection text"
  
 yumiwi : 
   summary : "Online platform for easy organization of a cooking event"
