@@ -514,19 +514,77 @@ section {
 
 #about {
   .profile-container {
-    margin: 20vh auto;
+    margin: 15vh auto 10vh auto;
     @include flex-flow(column-reverse, wrap);
     .intro { 
-      margin-top: 20px;
+      margin-top: 40px;
     }
   }
-  @media (min-width:$screenL) {
+  .magic-container { // TODO: replace the 3D canvas later
+    width: 100%; 
+    background-color: $main-color; 
+    padding: 40px 0;
+  }
+  .skill-container {
+    z-index: 0;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .skill {
+      position: relative;
+      width: 40%;
+      margin-right: 20px;
+    }
+    .bg-white {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $white-80;
+      border-radius: 50%;
+      @include filter(blur(50px));
+    }
+    h5, h6 {
+      margin-bottom: 20px;
+    }  
+  }
+  @media (min-width: $screenXS) {
+    .magic-container {
+
+    }
+  }
+  @media (min-width: $screenL) {
     .profile-container {
+      margin: 20vh auto;
       @include flex-flow(row, nowrap);
       .profile {
         flex: 0 0 60%;
         padding-left: 0;
       }
+    }
+    .magic-container {
+      padding: 10vh 0 20vh 0;
+    }
+    .skill-container {
+      @include flex-flow(column, nowrap);
+      margin-right: 100px;
+      margin-bottom: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+      .skill {
+        width: 100%;
+        margin: 0;
+      }
+      .bg-white {
+        background-color: $white-60;
+      }
+      h5, h6 {
+        text-align: center;
+      }  
     }
   }
 }

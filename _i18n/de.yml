@@ -50,6 +50,12 @@ info :
 
 about : 
   intro : "Ich bin eine Produkt Designerin mit einem tiefen technischen Verständnis und einem guten Gespür für Zukunftstendenzen."
+  web-title : "Webdesign/-entwicklung"
+  web-text : ""
+  app-title : "Appdesign"
+  app-text : ""
+  product-title : "Produktdesign"
+  product-text : ""
   more : "Mehr Details in meinem "
 
 myoncare : 

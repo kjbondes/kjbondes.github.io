@@ -50,6 +50,12 @@ info :
 
 about : 
   intro : "I am a Product designer with a deep technical understanding and a good sense for future trends."
+  web-title : "web design / develop"
+  web-text : ""
+  app-title : "app design"
+  app-text : ""
+  product-title : "product design"
+  product-text : ""
   more : "More details in my "
 
 myoncare : 

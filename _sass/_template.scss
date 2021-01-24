@@ -267,6 +267,11 @@ mark, %mark {
     background-color: $main-color;
   }
 }
+.tag {
+  padding: 5px 15px;
+  background-color: $white-50;
+  border-radius: 5px;
+}
 .noscroll { // prevent main-content scroll while menu is opened
   position: fixed;
   overflow: hidden;
