@@ -1,4 +1,11 @@
 /* color.scss */
+:root { // only used for test in inline html
+    --bg-grey:   rgb(249, 249, 249);    
+    --lu-yellow :    rgb(255, 220, 0);  
+    --myoncare : rgb(214, 39, 117); 
+    --shareco  : rgb(242, 106, 39); 
+    --yumiwi   : rgb(207, 78, 67); 
+}
 
 $bg-grey:   rgb(249, 249, 249);                //#F9F9F9
 
