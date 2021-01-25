@@ -25,7 +25,7 @@ description :
                     <img id="project-logo" src="{{ site.baseurl_root }}/img/logo/{{ project.logo }}.svg" />
                     <h2>{% t project.summary %}</h2>
                     <a href="{{ site.baseurl }}/projects/{{ project.id }}.html">
-                        <h6 class="text-mark"><mark>{% t home.view %}</mark></h6>
+                        <h6><span class="text-hover out">{% t home.view %}</span></h6>
                     </a>
                 </div>
                 <a class="transbox img-none-scroll" href="{{ site.baseurl }}/projects/{{ project.id }}.html">
@@ -66,7 +66,7 @@ description :
     <h2>{% t home.more %}</h2>
     <h4 style="margin: 20px 0;">
         {% t home.more-text %} – 
-        <a href="https://kuanjupan.wixsite.com/kj-pan/p-r-o-j-e-k-t-e" target="_blank"><mark>KJ PAN</mark></a>
+        <a href="https://kuanjupan.wixsite.com/kj-pan/p-r-o-j-e-k-t-e" target="_blank" class="text-hover out">KJ PAN</a>
     </h4>
     <div class="projects-container Grid">
         {% for more in site.data.projects-more %}

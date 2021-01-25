@@ -32,9 +32,6 @@ section {
       width: 200px; 
       height: 200px;
       border-radius: 50%; 
-      //@extend %img-cover;
-      //background-image: url("../img/profile.jpg");
-      //background-position: 80% 50%;
       @include transform(scale(1));
       @include transition(transform 0.5s ease);
       &:hover {
@@ -153,7 +150,7 @@ section {
       margin: 20px 20px 20px 0;
       max-width: 600px;
     }
-    h6.text-mark {
+    .text-hover {
       margin: 0 0 40px 5px;
     }
     .img-none-scroll {
@@ -203,17 +200,9 @@ section {
       border: 1px solid $bg-grey;
       color: $black-50;
     }
-    h6.text-mark { 
-      display: inline-block;
-      margin: 0;
-      padding: 5px 15px;
-    }
   }
   @media (min-width: $screenS) {
     .content-container {
-      h6.text-mark { 
-        display: block;
-      }
       .img-none-scroll {
         margin-bottom: 20vh;
       }
@@ -226,9 +215,6 @@ section {
       .tag {
         border: none;
         color: white;
-      }
-      h6.text-mark { 
-        display: none;
       }
     }
   }

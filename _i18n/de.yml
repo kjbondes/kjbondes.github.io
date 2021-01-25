@@ -10,8 +10,8 @@ nav :
   about : Über mich
   resume : Lebenslauf
   lang : Sprache
-  download-en : Herunterladen auf Englisch
-  download-de : Herunterladen auf Deutsch
+  download-en : Englische Version
+  download-de : Deutsche Version
   myoncare : "Digitale <br/>Gesundheitsplattform"
   shareco : "Konzeptentwurf einer <br/>Gemeinschaftswaschmaschine"
   yumiwi : "Onlineplattform zur <br/>Veranstaltungsorganisation"
@@ -82,7 +82,7 @@ myoncare :
   reflection-title : "Produktdesign mit Scrum Team"
   reflection-text-1 : "Während der letzten 3 Jahre im Start-up war ich die einzige Produktdesignerin und habe sehr eng mit jeder Abteilung, sowie dem Product Owner und CEO zusammen gearbeitet. Mit dem Scrum-Team habe ich so gelernt, wie man sich schnell in neue Aufgaben einarbeitet und Design-Strategien erstellt. Außerdem hatte ich auch einige Gelegenheiten, an den Projekten der Schwesternfirmen mitzuarbeiten."
   reflection-text-2 : "Als Designer für digitale Produkte und Softwareservice in einer Vielzahl von Projekten habe ich Erfahrung in Gesundheitsmanagement-Systemen, Customer Relationship Management-Systemen (CRM), Reise- und Meeting-Service, visueller Datenanalyse usw."
-  reflection-text-3 : "Aufgrund der Vertraulichkeit sind nur wenige Bilder und Funktionen erlaubt zu zeigen. Für weitere Informationen besuchen Sie bitte die Website des Unternehmens <a href='https://www.myoncare.com/' target='_blank'><mark>ONCARE GmbH</mark></a> oder der Schwesternfirma <a href='https://www.convien.com/' target='_blank'><mark>CONVIEN GmbH</mark></a>."
+  reflection-text-3 : "Aufgrund der Vertraulichkeit sind nur wenige Bilder und Funktionen erlaubt zu zeigen. Für weitere Informationen besuchen Sie bitte die Website des Unternehmens <a href='https://www.myoncare.com/' target='_blank' class='text-hover out'>ONCARE GmbH</a> oder der Schwesternfirma <a href='https://www.convien.com/' target='_blank' class='text-hover out'>CONVIEN GmbH</a>."
 
 shareco : 
   summary : "Konzeptentwurf einer individuellen, umweltfreundlichen und benutzerfreundlichen Waschmaschine zur gemeinschaftlichen Nutzung"
@@ -106,7 +106,7 @@ shareco :
   goal-note : "Anforderungen sowie Anforderungen an die Waschmaschine und die Plattform"
   result-title : "SHARECO – ökonomisch & ökologisch"
   result-text-1 : "Der Entwurf beinhaltet unter anderem eine automatische Größenanpassung der Trommel an die Wäschemenge, Optimierungen hinsichtlich der Ergonomie sowie eine Vernetzung mit mobilen Geräten."
-  result-text-2 : "Das Ergebnis stellt somit eine Verbesserung der klassischen Gemeinschaftswaschmaschine hinsichtlich Ergonomie und Bequemlichkeit dar. So soll es ermöglichen, dass Anreize für eine gemeinsame Nutzung geschaffen werden, die Bereitschaft zum Teilen an andere Personen weitergegeben werden und die Natur geschützt wird. Mehr Inhalte über Designprozess von der Waschmaschine siehe bitte <a href='https://kuanjupan.wixsite.com/kj-pan/shareco' target='_blank'><mark>hier</mark></a>."
+  result-text-2 : "Das Ergebnis stellt somit eine Verbesserung der klassischen Gemeinschaftswaschmaschine hinsichtlich Ergonomie und Bequemlichkeit dar. So soll es ermöglichen, dass Anreize für eine gemeinsame Nutzung geschaffen werden, die Bereitschaft zum Teilen an andere Personen weitergegeben werden und die Natur geschützt wird. Mehr Inhalte über Designprozess von der Waschmaschine siehe bitte <a href='https://kuanjupan.wixsite.com/kj-pan/shareco' target='_blank' class='text-hover out'>hier</a>."
   reflection : "Reflexion"
   reflection-title : "Reflexion-Titel"
   reflection-text : "Reflexion-Inhalt"
@@ -133,7 +133,7 @@ yumiwi :
   styleguides-note : "Navigation über Wörter und Piktogramme, zentrierte Anordnung wegen der arabischen Sprachen."
   result-title : "Zusammen wachsen – zusammenwachsen"
   result-text : "Unter den Gesichtspunkten der Nutzerzentrierten Gestaltung spiegelt sich diese auch in der Namensgebung der Plattform wieder. YUMIWI ist dabei das Synonym für YOU+ME=WE."
-  result-note : "Prototypen für <a href='http://nyphile.github.io/prototype/' target='_blank'><mark>Website</mark></a> und <a href='https://projects.invisionapp.com/share/4672XGFEB#/screens' target='_blank'><mark>App</mark></a>"
+  result-note : "Prototypen für <a href='http://nyphile.github.io/prototype/' target='_blank' class='text-hover out'>Website</a> und <a href='https://projects.invisionapp.com/share/4672XGFEB#/screens' target='_blank' class='text-hover out'>App</a>"
   reflection : ""
   reflection-title : ""
   reflection-text : ""

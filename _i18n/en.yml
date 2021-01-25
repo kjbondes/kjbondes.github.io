@@ -82,7 +82,7 @@ myoncare :
   reflection-title : "Product design with Scrum Team"
   reflection-text-1 : "While the past 3 years in the start-up, I was the only product designer and worked closely with each department, as well as the product owner and CEO. With the Scrum team I've learned how to quickly work in new tasks and make design strategies. Besides, I also had some opportunities to work with the projects of sisters' companies."
   reflection-text-2 : "As a designer for digital products and software service in variety of projects, I've experience in Healthcare management system, Customer Relationship Management system(CRM), Traveling & Meeting service, Data Visual analysis... etc. "
-  reflection-text-3 : "Due to the confidentiality, there are only few pictures and features allowed to show. For more information, please visit websites of the company <a href='https://www.myoncare.com/' target='_blank'><mark>ONCARE GmbH</mark></a> or the sister's company <a href='https://www.convien.com/' target='_blank'><mark>CONVIEN GmbH</mark></a>."
+  reflection-text-3 : "Due to the confidentiality, there are only few pictures and features allowed to show. For more information, please visit websites of the company <a href='https://www.myoncare.com/' target='_blank' class='text-hover out'>ONCARE GmbH</a> or the sister's company <a href='https://www.convien.com/' target='_blank' class='text-hover out'>CONVIEN GmbH</a>."
 
 shareco : 
   summary : "Concept design of an individual, environmentally friendly and user-friendly washing machine for shared use"
@@ -133,7 +133,7 @@ yumiwi :
   styleguides-note : "Navigation via words and pictograms, centered arrangement because of Arabic languages."
   result-title : "Growing together"
   result-text : "From the point of view of user-centered design, this is also reflected in the naming of the platform. YUMIWI is the synonym for YOU+ME=WE."
-  result-note : "Prototypes for <a href='http://nyphile.github.io/prototype/' target='_blank'><mark>Website</mark></a> and <a href='https://projects.invisionapp.com/share/4672XGFEB#/screens' target='_blank'><mark>App</mark></a>"
+  result-note : "Prototypes for <a href='http://nyphile.github.io/prototype/' target='_blank' class='text-hover out'>Website</a> and <a href='https://projects.invisionapp.com/share/4672XGFEB#/screens' target='_blank' class='text-hover out'>App</a>"
   reflection : ""
   reflection-title : ""
   reflection-text : ""

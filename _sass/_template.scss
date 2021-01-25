@@ -216,50 +216,43 @@ mark, %mark {
     }
   }
 }
-.text-hover { // underline-in & -out
+.text-hover { // highlight in
+  cursor: pointer;
   display: inline-block;
-  margin: 0 20px;
-  padding: 10px 0;
-  &.in { // same style as mark but without line before hover
-    padding: 5px 0;
+  &.in, &.out {
     background-image: linear-gradient(180deg, transparent 65%, $main-color 0%);
-    background-size: 0% 100%;
     background-repeat: no-repeat;
+    background-size: 0% 100%;
     @include transition(background-size 0.3s ease);
+    &:hover {
+      background-size: 100% 100%;
+    }
   }
-  &.in:hover {
-    background-size: 100% 100%;
+  &.in { // without border-bottom
+    // active for main-navbar
+    &.active:hover { background: none; }
+    &.active::after { 
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: black;
+    } 
   }
-  &.in.active:hover {
-    background: none;
-  }
-  &.in::after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 1px;
-    background: black;
-    @include transition(width 0.3s ease);
-  }
-  &.in.active::after {
-    width: 100%;
-  }
-  &.out::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: black;
-    @include transition(width 0.3s ease);
-  }
-  &.out:hover::after {
-    width: 0%;
-  }
-  &.out.active::after {
-    width: 0%;
-  }
+  &.out { // with border-bottom
+    &::after { 
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: black;
+      @include transition(width 0.3s ease);
+    } 
+    &:hover::after { width: 0%; }
+  }  
 }
 .icon-hover {
+  cursor: pointer;
   border-radius: 5px;
   background-color: transparent;
   @include transition(background-color .3s ease);
@@ -276,26 +269,21 @@ mark, %mark {
   position: fixed;
   overflow: hidden;
 }
-#nav-logo {
-  h2 {
-    border-bottom: none;
-  }
-  h6 {
-    margin-left: 2px;
-  }
-}
 #nav, #mobile-nav {
   z-index: 999;
   width: 100%;
   position: fixed;
   top: 0;
   @include transition(top 0.3s ease);
+  #nav-logo {
+    h6 { margin-left: 2px; }
+  }
 }
 #nav {
   display: none;
   padding: 15px 0;
   .nav-item {
-    cursor: pointer;
+    margin: 0 20px;
   }
   #nav-right {
     display: none;
@@ -373,7 +361,7 @@ mark, %mark {
     #nav-logo {
       h2 { font-size: 24px !important; }
       h6 { 
-        display: inline-block;
+        display: block;
         font-size: 12px !important; 
       }
     }

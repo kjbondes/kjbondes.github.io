@@ -2,7 +2,7 @@
     <div id="navbar" class="container60 Grid Grid--middle Grid--spaceBetween">
         <div id="nav-logo" class="Grid Grid--middle">
             <a href="{{ site.baseurl }}/">
-                <h2><mark style="border-bottom: none;">KJ Bondes</mark></h2>
+                <h2 class="text-hover in">KJ Bondes</h2>
                 <h6 style="margin-left: 2px;">
                     {% t nav.product %} 
                     Designer
@@ -29,7 +29,7 @@
             <a href="{{ site.baseurl_root }}/download/{{ site.lang }}/KJBondes.pdf" target="_blank">
                 <h6 class="nav-item text-hover in">{% t nav.resume %}</h6>
             </a>
-            <div class="nav-item dropdown">
+            <div class="dropdown">
                 <div class="icon-lang icon50-r icon-hover"></div>
                 <div class="dropdown-content icon">
                     {% for lang in site.data.multi-lang %}
@@ -52,7 +52,7 @@
     <div id="mobile-navbar" class="container60 Grid Grid--middle Grid--spaceBetween">
         <div id="nav-logo" class="Grid Grid--middle">
             <a href="{{ site.baseurl }}/">
-                <h2><mark style="border-bottom: none;">KJ Bondes</mark></h2>
+                <h2 class="text-hover in">KJ Bondes</h2>
                 <h6 style="margin-left: 2px;">
                     {% t nav.product %} 
                     Designer
@@ -85,10 +85,10 @@
         <h6>{% t about.more %}{% t nav.resume %}</h6>
         <div class="Grid">
             <a class="menu-item-row Grid-cell Grid Grid--middle" href="{{ site.baseurl_root }}/download/de/KJBondes.pdf" target="_blank">
-                <h5><mark>{% t nav.download-de %}</mark></h5>
+                <h5 class="text-hover out">{% t nav.download-de %}</h5>
             </a>
             <a class="menu-item-row Grid-cell Grid Grid--middle" href="{{ site.baseurl_root }}/download/en/KJBondes.pdf" target="_blank">
-                <h5><mark>{% t nav.download-en %}</mark></h5>
+                <h5 class="text-hover out">{% t nav.download-en %}</h5>
             </a>
         </div>
         <h6>{% t nav.lang %}</h6>
@@ -100,7 +100,7 @@
                 </a>
                 {% else %}
                 <a class="menu-item-row Grid-cell" href="{{ site.baseurl_root }}{{ lang.link }}{{ page.url }}">
-                    <h5><mark>{{ lang.label }}</mark></h5>
+                    <h5 class="text-hover out">{{ lang.label }}</h5>
                 </a>
                 {% endif %}
             {% endfor %}
