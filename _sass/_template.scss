@@ -168,14 +168,13 @@ mark, %mark {
     background-image: url('../img/icon/wave.gif');
     @extend %img-contain;
   }
-  @media only screen {
+  @media (min-width: $screenXXS) {
     display: block;
   }
 }
 /* components */
 .dropdown {
   position: relative;
-  cursor: pointer;
   .dropdown-content {
     display: none;
     position: absolute;
@@ -187,10 +186,6 @@ mark, %mark {
     z-index: 1;
     &.text {
       margin: 5px auto 5px -20px;
-      img {
-        height: 20px;
-        margin: 0 0 5px -10px;
-      }
       h6 {
         text-transform: none;
       }
@@ -228,18 +223,19 @@ mark, %mark {
       background-size: 100% 100%;
     }
   }
-  &.in { // without border-bottom
-    // active for main-navbar
-    &.active:hover { background: none; }
-    &.active::after { 
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1px;
-      background: black;
-    } 
+  &.in { // without underline
+    &.active { // active for main-navbar
+      &:hover { background: none; }
+      &::after { 
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: black;
+      } 
+    }
   }
-  &.out { // with border-bottom
+  &.out { // with underline
     &::after { 
       content: '';
       display: block;
@@ -284,6 +280,7 @@ mark, %mark {
   padding: 15px 0;
   .nav-item {
     margin: 0 20px;
+    padding: 5px 0; // distance to .dropdown-content.text
   }
   #nav-right {
     display: none;
