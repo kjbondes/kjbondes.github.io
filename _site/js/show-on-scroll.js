@@ -9,8 +9,12 @@ var scroll = window.requestAnimationFrame ||
              // IE Fallback
              function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+var followerToShow = document.querySelector('#home-landing-page');
+var follower = document.getElementById('follower');
 
 function loop() {
+
+  // show project img and change background-color
   let bgColor = 'transparent';
   Array.prototype.forEach.call(elementsToShow, function(element){
     let elementPic = 'img-' + element.id;
@@ -35,6 +39,15 @@ function loop() {
     }
   });
   document.body.style.backgroundColor = bgColor;
+
+  // show follower on landing page even in mobile
+  var width = window.innerWidth;
+  if (width < 420 && !isElementInViewport(followerToShow)) {
+    $('#follower').hide();
+  } else {
+    $('#follower').show();
+  }
+
   scroll(loop);
 }
 
