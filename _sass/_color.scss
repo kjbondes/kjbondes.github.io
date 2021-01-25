@@ -1,7 +1,7 @@
 /* color.scss */
 :root { // only used for test in inline html
-    --bg-grey:   rgb(249, 249, 249);    
-    --lu-yellow :    rgb(255, 220, 0);  
+    --bg-grey  : rgb(249, 249, 249);    
+    --lu-yellow: rgb(255, 220, 0);  
     --myoncare : rgb(214, 39, 117); 
     --shareco  : rgb(242, 106, 39); 
     --yumiwi   : rgb(207, 78, 67); 
@@ -41,10 +41,15 @@ $black-80 : rgba(0, 0, 0, 0.8);
 $black-90 : rgba(0, 0, 0, 0.9);
 
 $myoncare : rgb(214, 39, 117);      //#D62775
+$myoncare-20 : rgba(214, 39, 117, 0.2);
 $myoncare-gradient : linear-gradient(-0.07turn, rgba(255, 113, 113, 0.8), rgba(220, 15, 106, 0.8));
-$shareco  : rgb(242, 106, 39);      //#F26A27
+
+$shareco : rgb(242, 106, 39);      //#F26A27
+$shareco-20 : rgba(242, 106, 39, 0.2);
 $shareco-gradient : linear-gradient(-0.07turn, rgba(255, 174, 0, 0.8), rgba(242, 106, 39, 0.8));
-$yumiwi   : rgb(207, 78, 67);       //#CF4E43
+
+$yumiwi : rgb(207, 78, 67);       //#CF4E43
+$yumiwi-20 : rgba(207, 78, 67, 0.2);
 $yumiwi-gradient : linear-gradient(-0.07turn, rgba(222, 93, 56, 0.8), rgba(216, 26, 0, 0.8));
 
 $main-color: $lu-yellow;

@@ -20,7 +20,7 @@ home :
   web : web
   app : app
   product : product
-  description : "Hello! I'm Kuan-Ju Bondes – a Product Designer based in Germany. <br>With experience in design and usability for both physical and digital products."
+  description : "Hello! I'm Kuan-Ju Bondes – a Product Designer based in Germany. <br>With experience in <mark>design</mark> and <mark>usability</mark> for both physical and digital products."
   featured : "Featured projects"
   more : "More work"
   more-text : "Find out more work I did before"
