@@ -373,7 +373,6 @@ section {
     .overview-img { background-position: 50% 0%; }
     a { color: $myoncare !important; }
     mark { background-image: linear-gradient(180deg, transparent 20%, $myoncare-20 0%); }
-    div:hover { mark { background-size: 100% 100%; } }
   }
   .mobile-app {
     background-image: url("../img/myoncare/bg_mobile.png");
@@ -407,7 +406,6 @@ section {
     .overview-img { background-position: 35% 50%; }
     a { color: $shareco !important; }
     mark { background-image: linear-gradient(180deg, transparent 20%, $shareco-20 0%); }
-    div:hover { mark { background-size: 100% 100%; } }
   }
   .problem {
     width: calc(33% - 20px);
@@ -478,7 +476,6 @@ section {
     .overview-img { background-position: 25% 50%; }
     a { color: $yumiwi !important; }
     mark { background-image: linear-gradient(180deg, transparent 20%, $yumiwi-20 0%); }
-    div:hover { mark { background-size: 100% 100%; } }
   }
   .devices-container {
     @include flex-flow(column-reverse, wrap);
