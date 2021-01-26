@@ -14,6 +14,12 @@ section {
   position: relative;
 }
 
+#main-content {
+  min-height: 100%;
+  @media (min-width: $screen320) {
+    height: 100%;
+  }
+}
 #home {
   .title-contact {
     margin-top: 15vh;
@@ -101,13 +107,13 @@ section {
     background-color: transparent;
   }
   */
-  @media (min-width: 350px) and (min-height: $screenXS) { 
+  @media (min-width: $screen320) and (min-height: $screenXS) { 
     .container60 {
       height: 100%;
       padding: 20vh 0;
     }
   }  
-  @media (min-width: $screenXS) {
+  @media (min-width: $screenXXS) {
     .title-container {
       padding: 0;
       display: block;
