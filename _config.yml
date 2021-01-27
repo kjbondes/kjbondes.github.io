@@ -2,7 +2,7 @@
 title: "KJ Bondes"
 author: "KJ Bondes"
 email: kuanju.bondes@posteo.de
-description:
+description: home.description
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kjbondes.github.io"
 
