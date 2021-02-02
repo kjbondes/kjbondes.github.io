@@ -151,7 +151,7 @@ mark {
   color: inherit;
   padding: 5px 0;
   background-color: transparent;
-  background-image: linear-gradient(180deg, transparent 0%, $main-color 0%);
+  background-image: linear-gradient(180deg, transparent 20%, $main-color 0%);
   background-size: 100% 5px;
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -183,6 +183,7 @@ h1, h2, h3, h4, h5, h6, p {
     @include transform(scale(0.15));
     @include transition(transform 0.3s ease);
   }
+  /*
   .cursor-web {
     z-index: -999;
     opacity: 0.5;
@@ -200,6 +201,7 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 0.5;
     @include transform(scale(3.5));
   }
+  */
   .cursor-text {
     z-index: 999;
     opacity: 0.8;

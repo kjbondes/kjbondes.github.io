@@ -117,31 +117,34 @@ section {
       display: block;
     }
   }
-  @media (min-width: $screenS) {
+  @media (min-width: $screenM) {
+    .title-group {
+      text-align: center;
+    }
     .title { 
       font-size: 80px;
       color: white;
+      background-color: $main-color;
       -webkit-text-stroke: 1.2px black;
       text-shadow: 1.5px 1.5px black;
       @include transition(text-shadow 0.3s ease);
       &:hover {
-        //color: black;
         text-shadow: 4px 4px black;
       }
     }
     h3 {
-      margin-left: 10px;
+      text-align: center;
     }
   }
   @media (min-width: $screenL) {
     .title { 
-      font-size: 120px;
+      font-size: 100px;
       -webkit-text-stroke: 1.5px black;
     }
   }
   @media (min-width: $screenXL) {
     .title { 
-      font-size: 150px;
+      font-size: 120px;
       -webkit-text-stroke: 1.8px black;
     }
   }
