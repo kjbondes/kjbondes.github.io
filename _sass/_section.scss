@@ -74,12 +74,12 @@ section {
 #home-landing-page {
   width: 100%;
   min-height: 100%;
-  .container60 {
+  .title-container {
     padding: 30vh 0 20vh 0;
   }
-  .title-container {
-    z-index: 1;
-    padding: 20px 0;
+  .title-group {
+    z-index: 100;
+    padding: 20px auto;
     @include flex-flow(column, wrap);
   }
   .title {
@@ -106,14 +106,14 @@ section {
   */
   @media (min-width: $screen320) and (min-height: 640px) { 
     height: 100%;
-    .container60 {
+    .title-container {
       height: 100%;
       padding: 20vh 0;
     }
   }  
   @media (min-width: $screenXXS) {
-    .title-container {
-      padding: 0;
+    .title-group {
+      padding: 0 auto;
       display: block;
     }
   }

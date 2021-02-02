@@ -23,33 +23,47 @@ body {
 .container60 {
   width: calc(100% - 40px);
   margin: 0 auto;
+  .flex30, 
+  .flex70-left, 
+  .flex70-right, 
+  .flex50 {
+    width: 100%;
+  }
   &.extend-left {
     width: 100%;
     margin-left: 0;
+    .extend-container {
+      padding: 20px;
+    }
   }
   &.extend-right {
     width: 100%;
     margin-right: 0;
+    .extend-container {
+      padding: 20px;
+    }
   }
-  .flex30,
-  .flex70-left,
-  .flex70-right,
-  .flex50 {
-    width: 100%;
-  }
-
   @media (min-width: $screenXS) {
     width: calc(100% - 80px);
+    &.extend-left, &.extend-right {
+      .extend-container {
+        padding: 20px 40px;
+      }
+    }
   }
   @media (min-width: $screenM) {
     width: calc(100% - 160px);
+    &.extend-left, &.extend-right {
+      .extend-container {
+        padding: 20px 80px;
+      }
+    }
   }
   @media (min-width: $screenL) {
     width: 80%;
-    &.extend-left, &.extend-right {
-      width: 90%;
+    .flex30 { 
+      @include flex(0 0 30%); 
     }
-    .flex30 { @include flex(0 0 30%); }
     .flex70-left { 
       @include flex(1); 
       padding-right: 100px;
@@ -68,17 +82,49 @@ body {
         padding-right: 0px;
       }
     }
+    &.extend-left {
+      width: 90%;
+      .extend-container {
+        padding: 20px;
+        padding-left: 10vw;
+      }
+    }
+    &.extend-right {
+      width: 90%;
+      .extend-container {
+        padding: 20px;
+        padding-right: 10vw;
+      }
+    }
   }
   @media (min-width: $screenXL) {
     width: 70%;
-    &.extend-left, &.extend-right {
+    &.extend-left {
       width: 85%;
+      .extend-container {
+        padding-left: 15vw;
+      }
+    }
+    &.extend-right {
+      width: 85%;
+      .extend-container {
+        padding-right: 15vw;
+      }
     }
   }
   @media (min-width: $screenXXL) {
-  width: 60%;
-    &.extend-left, &.extend-right {
+    width: 60%;
+    &.extend-left {
       width: 80%;
+      .extend-container {
+        padding-left: 20vw;
+      }
+    }
+    &.extend-right {
+      width: 80%;
+      .extend-container {
+        padding-right: 20vw;
+      }
     }
   }
 }

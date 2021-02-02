@@ -4,9 +4,8 @@
  * Separated by carousel id
  */
 
- .container60.extend-left {    //padding-left changing with the container60
+ .container60.extend-left { 
   .project-carousel {
-    padding: 20px;
     background-color: $bg-grey;
   }
   p.note.flex30 {
@@ -14,40 +13,22 @@
     margin-top: 20px;
   }
   @media (min-width: $screenXS) {
-    .project-carousel {
-      padding: 20px 40px;
-    }
     p.note.flex30 {
       padding: 0 40px;
     }
   }
   @media (min-width: $screenM) {
-    .project-carousel {
-      padding: 20px 80px;
-    }
     p.note.flex30 {
       padding: 0 80px;
     }
   }
   @media (min-width: $screenL) {
     .project-carousel {
-      padding-right: 20px;
-      padding-left: 10vw;
       margin-right: 50px;
     }
     p.note.flex30 {
       padding: 0;
       margin: 0;
-    }
-  }
-  @media (min-width: $screenXL) {
-    .project-carousel {
-      padding-left: 15vw;
-    }
-  }
-  @media (min-width: $screenXXL) {
-    .project-carousel {
-      padding-left: 20vw;
     }
   }
 }
