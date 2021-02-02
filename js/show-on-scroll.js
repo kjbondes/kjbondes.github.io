@@ -41,12 +41,14 @@ function loop() {
   document.body.style.backgroundColor = bgColor;
 
   // show follower on landing page even in mobile
+  /*
   var width = window.innerWidth;
   if (width < 420 && !isElementInViewport(followerToShow)) {
     $('#follower').hide();
   } else {
     $('#follower').show();
   }
+  */
 
   scroll(loop);
 }

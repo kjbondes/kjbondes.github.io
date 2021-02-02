@@ -180,78 +180,13 @@
 </div>
 
 <script>
-    /* icon-menu toggle & body noscroll */
-    $(document).ready(function(){
-        $('#icon-menu').click(function(){
-            $(this).toggleClass('open');
-            var menuOpen = $(this).hasClass('open');
-            $('#main-content').toggleClass('noscroll', menuOpen);
-            $('#mobile-nav').scrollTop = 0;
-            if (menuOpen) {
-                $('#mobile-nav').css('position', 'static');
-                $('#mobile-nav').css('overflow-y', 'scroll');
-                $('#mobile-nav').css('min-height', '100%');
-            } else {
-                $('#mobile-nav').css('position', 'fixed');
-                $('#mobile-nav').css('overflow-y', 'hidden');
-                $('#mobile-nav').css('min-height', 'auto');
-            }
-        });
-    });
+   
 
-    /* show nav when scroll up */
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        var nav = document.getElementById("nav");
-        var mobileNav = document.getElementById("mobile-nav");
-        if ($('body').attr('id') == 'home') {
-            if (currentScrollPos < '80') {
-                nav.style.top = "0";
-                mobileNav.style.top = "0";
-            } else {
-                nav.style.top = "-100px";
-                nav.classList.remove('nav-scrollup');
-                mobileNav.style.top = "-100px";
-                mobileNav.classList.remove('nav-scrollup');
-            }
-        } else {
-            if (currentScrollPos < '80') {
-                nav.style.top = "0";
-                nav.classList.remove('nav-scrollup');
-                mobileNav.style.top = "0";
-                mobileNav.classList.remove('nav-scrollup');
-            } else if (prevScrollpos > currentScrollPos) {
-                nav.style.top = "0";
-                nav.classList.add('nav-scrollup');
-                mobileNav.style.top = "0";
-                mobileNav.classList.add('nav-scrollup');
-            } else {
-                nav.style.top = "-100px";
-                nav.classList.remove('nav-scrollup');
-                mobileNav.style.top = "-100px";
-                mobileNav.classList.remove('nav-scrollup');
-            }
-        }
-        prevScrollpos = currentScrollPos;
-    }
 </script>
 
     <div id="main-content">
       
-      <!--div id="home-landing-page" class="transbox">
-    <canvas id="nokey" width="100%" height="100%"></canvas>
-    <div class="title-container container60 Grid-column Grid-column--middle">
-        <div class="title-group Grid">
-            <span class="title" onmousemove="cursorShow('cursor-web')" onmouseout="cursorHide('cursor-web')">web. </span>
-            <span class="title" onmousemove="cursorShow('cursor-app')" onmouseout="cursorHide('cursor-app')">app. </span>
-            <span class="title" onmousemove="cursorShow('cursor-product')" onmouseout="cursorHide('cursor-product')">product.</span>
-        </div>
-        <h3 class="sub-title">Hello! I'm Kuan-Ju Bondes – a <mark>Product Designer</mark> based in Germany. <br>With experience in <mark>design</mark> and <mark>usability</mark> for both physical and digital products.</h3>
-    </div>
-</div-->
-
-<div id="home-landing-page" class="transbox">
+      <div id="home-landing-page" class="transbox">
     <div class="title-container container60 Grid-column Grid-column--middle">
         <div class="title-group Grid">
             <span class="title" onmousemove="cursorShow('cursor-web')" onmouseout="cursorHide('cursor-web')">web. </span>
@@ -441,7 +376,6 @@
     </div>
 </div>
 
-<!--script src="/js/canvas.js"></script-->
 <script type="text/javascript" src="/js/show-on-scroll.js"></script>
       <div id="footer" class="Grid Grid--center Grid--middle">
     <div id="footer-text" class="Grid Grid--middle">
