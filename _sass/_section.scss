@@ -113,7 +113,6 @@ section {
   }  
   @media (min-width: $screenXXS) {
     .title-group {
-      padding: 0 auto;
       display: block;
     }
   }
@@ -122,9 +121,9 @@ section {
       text-align: center;
     }
     .title { 
+      background-color: $main-color;
       font-size: 80px;
       color: white;
-      background-color: $main-color;
       -webkit-text-stroke: 1.2px black;
       text-shadow: 1.5px 1.5px black;
       @include transition(text-shadow 0.3s ease);
@@ -132,7 +131,7 @@ section {
         text-shadow: 4px 4px black;
       }
     }
-    h3 {
+    .sub-title {
       text-align: center;
     }
   }
@@ -245,7 +244,7 @@ section {
   margin: 15vh auto 10vh auto;
   .projects-container {
     .Grid-2 { @include flex(0 0 100%); }
-    .Grid-4 { @include flex(0 0 45%); }
+    .Grid-4 { @include flex(0 0 calc(50% - 10px)); }
     .Grid-cell {
       margin: 0 20px 20px 0;
       &:nth-child(2), &:nth-child(4) {
