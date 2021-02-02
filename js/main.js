@@ -11,8 +11,4 @@ $( document ).ready(function(){
     // TODO: only redirect to actual path, not home
     window.location = '/en';
   }
-  if (landingPage && $('body').attr('id') == 'home') {
-      nav.style.opacity = "0";
-    }
-  }
 })
