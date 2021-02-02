@@ -11,4 +11,15 @@ $( document ).ready(function(){
     // TODO: only redirect to actual path, not home
     window.location = '/en';
   }
+
+  // hide navbar while landing
+  var width = window.innerWidth;
+  if ( width >= 992 && $('body').attr('id')=='home' ) {
+    $('#nav').hide();
+    $( document ).scroll(function(){
+      setTimeout(function() { 
+        $('#nav').show();
+      }, 300);
+    });
+  }
 })
