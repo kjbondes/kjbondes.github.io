@@ -26,7 +26,7 @@ section {
     padding: 10vh 0;
     background-color: $main-color;
     .text-hover {
-      margin: 10px;
+      margin: 10px 0;
     }
     .profile { 
       width: 100%;
@@ -77,10 +77,9 @@ section {
   .title-container {
     padding: 30vh 0 20vh 0;
   }
-  .title-group {
+  #title-group {
     z-index: 100;
-    padding: 20px auto;
-    @include flex-flow(column, wrap);
+    padding: 20px 0;
   }
   .title {
     cursor: none;
@@ -91,8 +90,17 @@ section {
     color: black;
   }
   .sub-title {
-    margin-top: 20px;
+    padding: 10px 0;
     &:hover { mark { background-size: 100% 100%; } }
+  }
+  .white-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
   }
   /*canvas {
     display: none;

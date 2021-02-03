@@ -1,3 +1,35 @@
+/* animation.scss */
+
+@media (min-width: $screenM) {
+    #title-group {
+        @include animation(fade-in 3s ease);
+        .white-box {
+            @include animation(title-fade-in 5s ease);
+        }
+    }  
+    #sub-title {
+        @include animation(fade-in 3s ease 1s);
+        .white-box {
+            @include animation(subtitle-fade-in 3s ease);
+        }
+    }
+}
+
+@include keyframes(fade-in) {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+@include keyframes(title-fade-in) {
+    0% { width: 100%; opacity: 1; }
+    50% { width: 0%; opacity: 1; }
+    100% { width: 0% }
+}
+@include keyframes(subtitle-fade-in) {
+    0% { width: 100%; opacity: 1; }
+    30% { width: 100%; }
+    100% { width: 0%; opacity: 1; }
+}
+
 #icon-menu {
     cursor: pointer;
     position: relative;

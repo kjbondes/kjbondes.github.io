@@ -8,12 +8,18 @@ description :
 
 <div id="home-landing-page" class="transbox">
     <div class="title-container container60 Grid-column Grid-column--middle">
-        <div class="title-group Grid">
-            <span class="title" onmousemove="cursorShow('cursor-web')" onmouseout="cursorHide('cursor-web')">{% t home.web %}. </span>
-            <span class="title" onmousemove="cursorShow('cursor-app')" onmouseout="cursorHide('cursor-app')">{% t home.app %}. </span>
-            <span class="title" onmousemove="cursorShow('cursor-product')" onmouseout="cursorHide('cursor-product')">{% t home.product %}.</span>
+        <div id="title-group" class="transbox">
+            <div class="title-group Grid-column">
+                <span class="title" onmousemove="cursorShow('cursor-web')" onmouseout="cursorHide('cursor-web')">{% t home.web %}. </span>
+                <span class="title" onmousemove="cursorShow('cursor-app')" onmouseout="cursorHide('cursor-app')">{% t home.app %}. </span>
+                <span class="title" onmousemove="cursorShow('cursor-product')" onmouseout="cursorHide('cursor-product')">{% t home.product %}.</span>
+            </div>
+            <div class="white-box"></div>
         </div>
-        <h3 class="sub-title">{% t home.description %}</h3>
+        <div id="sub-title" class="transbox">
+            <h3 class="sub-title">{% t home.description %}</h3>
+            <div class="white-box"></div>
+        </div>
     </div>
 </div>
 
