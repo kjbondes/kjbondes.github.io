@@ -22,7 +22,7 @@ $(document).ready(function(){
   var userLang = navigator.language || navigator.userLanguage;
   if (ifReloading() && userLang !== "de") {
     // TODO: only redirect to actual path, not home
-    //window.location.href = 'https://127.0.0.1:4000/en/';
+    //window.location.href = 'http://127.0.0.1:4000/en/';
     window.location.href = 'https://kjbondes.github.io/en/';
   }
 
