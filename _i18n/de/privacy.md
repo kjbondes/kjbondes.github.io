@@ -87,6 +87,8 @@ Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets de
 
 ### **Fragen an den Datenschutzbeauftragten**
 
-Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation: Kuan-Ju Bondes ([kuanju.bondes@posteo.de](mailto:kuanju.bondes@posteo.de))
+Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person: Kuan-Ju Bondes ([kuanju.bondes@posteo.de](mailto:kuanju.bondes@posteo.de))
+
+---
 
 *Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für [externe Datenschutzbeauftragte](https://www.activemind.de/datenschutz/datenschutzbeauftragter/) (Version #2020-09-30).*

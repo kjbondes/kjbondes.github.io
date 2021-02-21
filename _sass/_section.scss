@@ -612,8 +612,8 @@ section {
     border: 1px solid $lu-yellow-20; 
   }
   h2 { margin-bottom: 40px; }
-  h3, h4, p { margin-bottom: 20px; }
   li { margin-bottom: 10px; }
+  h3, h4, p, li:last-child { margin-bottom: 20px; }
   a {
     @extend %text-hover;
     @extend %out; 
