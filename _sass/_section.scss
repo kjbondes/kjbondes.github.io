@@ -598,3 +598,32 @@ section {
     }
   }
 }
+#privacy {
+  .page-title-container {
+    margin: 20vh 0 10vh 0;
+    padding: 50px 0;
+    background-color: $main-color;
+  }
+}
+#privacy-content {
+  margin-bottom: 20vh;
+  hr { 
+    margin: 50px 0;
+    border: 1px solid $lu-yellow-20; 
+  }
+  h2 { margin-bottom: 40px; }
+  h3, h4, p { margin-bottom: 20px; }
+  li { margin-bottom: 10px; }
+  a {
+    @extend %text-hover;
+    @extend %out; 
+  }
+  @media (min-width: $screenL) {
+    .sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 100px;
+      align-self: flex-start; /* <-- this is the fix */
+    }
+  }
+}

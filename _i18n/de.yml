@@ -1,8 +1,12 @@
+general : 
+  last-updated : Zuletzt aktualisiert
+
 title : 
   myoncare : myoncare
   shareco : shareco
   yumiwi : yumiwi
   about : About me
+  privacy : Datenschutz
 
 nav : 
   product : Produkt

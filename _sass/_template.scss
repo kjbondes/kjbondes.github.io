@@ -263,10 +263,10 @@ h1, h2, h3, h4, h5, h6, p {
     }
   }
 }
-.text-hover { // highlight in
+.text-hover, %text-hover { // highlight in
   cursor: pointer;
   display: inline-block;
-  &.in, &.out {
+  &.in, &.out, &%in, &%out {
     background-image: linear-gradient(180deg, transparent 65%, $main-color 0%);
     background-repeat: no-repeat;
     background-size: 0% 100%;
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6, p {
       background-size: 100% 100%;
     }
   }
-  &.in { // without underline
+  &.in, &%in { // without underline
     &.active { // active for main-navbar
       &:hover { background: none; }
       &::after { 
@@ -287,7 +287,7 @@ h1, h2, h3, h4, h5, h6, p {
       } 
     }
   }
-  &.out { // with underline
+  &.out, &%out { // with underline
     &::after { 
       content: '';
       display: block;
@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .footer-web { display: none; }
   .icon-mail { display: flex; }
-  @media (min-width: $screenXS) {
+  @media (min-width: $screenS) {
     #footer-icons { width: auto; }
     .footer-web { display: flex; }
     .icon-mail { display: none; }
