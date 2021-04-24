@@ -41,6 +41,7 @@ tag :
   app : "App"
   web : "Web"
   webapp : "Web App"
+  system : "System"
   product : "Product Design"
   graphic : "Graphic Design"
   animation : "Animation"
@@ -50,7 +51,8 @@ info :
   company : company
   supervisor : supervisor
   designer : designer
-  role : role
+  role : responsibility
+  more : more
 
 about : 
   intro : "I am a Product Designer with a deep technical understanding and a good sense for future trends."
@@ -142,5 +144,29 @@ yumiwi :
   reflection-title : ""
   reflection-text : ""
 
+kuckuck : 
+  summary : "Study-Development of carpooling services for the elderly"
+  info-timeframe : "10.2014 – 01.2015"
+  info-supervisor : "Prof. Peter Laabs"
+  info-designer : "Christiane Felsberg, Christoph Uckermark, Franz Junghans, Jie Ding, Julius Plüschke, Kuan-Ju Pan, Luise Münzner"
+  info-role : "User Research, Product Concept, Interaction Design, Prototyping, Video Editing"
 
-  
+luwood : 
+  summary : "Product development inspired by local culture"
+  info-timeframe : "05.2013 – 08.2013"
+  info-company : "OUTPUT Design Corp."
+  info-role : "Conception, Sketches, Prototyping, 3D-Modelling, Production File, Revision"
+
+mirak : 
+  summary : "New conception of a rental system and takeaway cooking station"
+  info-timeframe : "10.2015 – 01.2016"
+  info-supervisor : "Helge Oder"
+  info-designer : "Jie Ding, Johannes Hetzodl, Kuan-Ju Pan, Sandra Püschel"
+  info-role : "User Research, Conception, Sketches, Prototyping"
+
+ohwhy : 
+  summary : "Concept of strengthening family cohesion – Children’s camera and OLED Screen application"
+  info-timeframe : "09.2009 – 05.2010 (Bachelor thesis)"
+  info-supervisor : "Min-Yuan Ma"
+  info-designer : "Kuan-Ju Pan, Yi-Her Hsu, Yu-Chun Chou"
+  info-role : "Research, Conception, Sketches, Prototyping, 3D-Modelling & Rendering, Production File, Revision"

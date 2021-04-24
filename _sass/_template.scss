@@ -170,6 +170,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: none;
   position: fixed;
   pointer-events: none;
+  z-index: 100;
   .cursor {
     position: absolute;
     width: 80px;
@@ -203,7 +204,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   */
   .cursor-text {
-    z-index: 999;
+    z-index: 999 !important;
     opacity: 0.8;
     @include transform(scale(1));
     h6 {
@@ -218,6 +219,13 @@ h1, h2, h3, h4, h5, h6, p {
     @include transform(scale(1));
     background-color: transparent;
     background-image: url('../img/icon/wave.gif');
+    @extend %img-contain;
+  }
+  .cursor-back {
+    z-index: 999 !important;
+    opacity: 0.8;
+    @include transform(scale(0.5));
+    background-image: url('../img/icon/icon-close.svg');
     @extend %img-contain;
   }
   @media (min-width: $screenXXS) {
@@ -313,6 +321,123 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: $white-50;
   border-radius: 5px;
 }
+.modal { // modal showed by toggle
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: $black-80;
+  @include animation(fade-in 0.4s);
+  .modal-background { // click background to end the modal mode
+    position: fixed;
+    cursor: none; // cursor icon-close
+    z-index: -100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .modal-project-container { 
+    position: relative;
+    margin: 5vh auto;
+    background-color: white;
+    border-radius: 10px;
+    @include animation(slide-in-bottom 0.4s);
+  }
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .modal-project-pic {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px 10px 0 0;
+    @extend %img-cover;
+  }
+  .modal-project-content {
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    .title {
+      .tag {
+        margin: 0 20px 10px -10px;
+        color: $black-50;
+        background-color: $bg-grey;
+      }
+      .hr {
+        width: 100%;
+        margin: 40px 0;
+      }
+    }
+    .info {
+      .info-title {
+        text-transform: capitalize;
+        color: $black-50;
+        width: 100%;
+      }
+    }
+  }
+  &#luwood {
+    .modal-project-pic {
+      background-position-y: 75%;
+    }
+  }
+  &#mirak {
+    .modal-project-pic {
+      background-size: contain;
+      background-position-y: 100%;
+    }
+  }
+  &#ohwhy {
+    .modal-project-pic {
+      background-size: contain;
+    }
+  }
+  @media (min-width: $screenS) {
+    .modal-project-pic {
+      min-height: 400px;
+    }
+  }
+  @media (min-width: $screenL) {
+    .modal-back {
+      display: none;
+    }
+    .modal-project-container {
+      height: 80%;
+      min-height: 600px;
+      margin-top: 10vh;
+    }
+    .modal-project-pic {
+      width: 50%;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+    .modal-project-content {
+      width: 50%;
+      height: 100%;
+      padding: 40px;
+      .title {
+        margin: 20px 0;
+        h2 {
+          margin-top: 2vh;
+        }
+        .hr {
+          display: none;
+        }
+      }
+      .info {
+        margin-bottom: 2vh;
+        .info-title {
+          width: 160px;
+        }
+      }
+    }
+  }
+}
+
 .noscroll { // prevent main-content scroll while menu is opened
   position: fixed;
   overflow: hidden;

@@ -258,6 +258,7 @@ section {
 .title-more {
   margin: 15vh auto 10vh auto;
   .projects-container {
+    margin-top: 20px;
     .Grid-2 { @include flex(0 0 100%); }
     .Grid-4 { @include flex(0 0 calc(50% - 10px)); }
     .Grid-cell {

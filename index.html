@@ -70,18 +70,15 @@ description :
 <!-- move the project to actuell page -->
 <div class="title-more container60">
     <h2>{% t home.more %}</h2>
-    <h4 style="margin: 20px 0;">
-        {% t home.more-text %} – 
-        <a href="https://kuanjupan.wixsite.com/kj-pan/p-r-o-j-e-k-t-e" target="_blank" class="text-hover out">KJ PAN</a>
-    </h4>
+    <!--h4 style="margin-top: 20px;">{% t home.more-text %}</h4-->
     <div class="projects-container Grid">
         {% for more in site.data.projects-more %}
-            <a class="Grid-cell Grid-4" href="https://kuanjupan.wixsite.com/kj-pan/{{ more.id }}" target="_blank" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')">
+            <a class="Grid-cell Grid-4" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')" onclick="modalMode()" aria-expanded="false" data-toggle="collapse" data-target="#{{ more.id }}">
                 <img src="{{ site.baseurl_root }}/img/others/{{ more.id }}.jpg" />
             </a>
+            {% include modal-project.html content=more.id %}
         {% endfor %}
     </div>
-    <p class="note">{% t home.more-note %}</p>
 </div>
 
 <div class="title-contact">

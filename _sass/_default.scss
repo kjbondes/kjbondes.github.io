@@ -21,6 +21,7 @@ html, body {  /* % : zoom in & out for safari */
   margin: 0;
   width: 100%;
   height: 100%;
+  //overflow-y: auto;
   scroll-behavior: smooth;
 }
 html ::selection, body ::selection {
