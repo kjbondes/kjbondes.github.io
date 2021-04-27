@@ -73,10 +73,12 @@ description :
     <!--h4 style="margin-top: 20px;">{% t home.more-text %}</h4-->
     <div class="projects-container Grid">
         {% for more in site.data.projects-more %}
-            <a class="Grid-cell Grid-4" onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')" onclick="modalMode()" aria-expanded="false" data-toggle="collapse" data-target="#{{ more.id }}">
-                <img src="{{ site.baseurl_root }}/img/others/{{ more.id }}.jpg" />
-            </a>
-            {% include modal-project.html content=more.id %}
+            <div class="Grid-cell Grid-4">
+                <a onmousemove="cursorShow('cursor-text')" onmouseout="cursorHide('cursor-text')" onclick="" data-toggle="modal" href="#{{ more.id }}">
+                    <img src="{{ site.baseurl_root }}/img/others/{{ more.id }}.jpg" />
+                </a>
+                {% include modal-project.html content=more.id %}
+            </div>
         {% endfor %}
     </div>
 </div>

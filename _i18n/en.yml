@@ -51,7 +51,7 @@ info :
   company : company
   supervisor : supervisor
   designer : designer
-  role : responsibility
+  role : responsibilities
   more : more
 
 about : 
@@ -59,7 +59,7 @@ about :
   web-title : "web design / develop"
   web-text : "Advanced knowhow about HTML&CSS and Javascript. With experience in building website with blog framework Jekyll or online platform wix, webflow and wordpress."
   app-title : "digital product design"
-  app-text : "Expertise in delivering UX/UI design for software products. Be able to quickly propose design strategies and collaborate with agile/scrum team."
+  app-text : "Expertise in delivering UX/UI design for software products. Be able to quickly propose design strategies and collaborate with agile/scrum teams."
   product-title : "product design"
   product-text : "With a background in industrial design and product design to make products that fit the user with a more accurate perspective."
   more : "More details in my "
@@ -68,7 +68,7 @@ myoncare :
   summary : "Digital healthcare platform for efficient and demand-oriented patient care"
   info-timeframe : "04.2017 – 07.2020"
   info-company : "ONCARE GmbH"
-  info-role : "Senior Product & UI/UX Designer"
+  info-role : "UX Review, User Flows, Information Architechture, Wireframing, Prototyping, Usability Test, UI Design, Design System"
   overview-title : "Strengthen the connection between patients and their healthcare providers through myoncare"
   overview-text-1 : "myoncare is a comprehensive digital service that focuses on healthcare follow-up and patient-centered healthcare via providing the real-time, proactive performance to react to reported abnormalities."
   overview-text-2 : "During my last job as Senior Product & UI/UX Designer at ONCARE GmbH, I was responsible for <mark>research, conception, interactions, visual design, prototypes and mockups</mark> and did the complete design process <mark>for the current mobile app and web-app platform</mark>. The missions and milestones achieved during my working period are bellow: "

@@ -56,7 +56,7 @@ h2 { //logo, project title
   line-height: 1.2;
 }
 h3 { //title
-	font-size: 18px;
+	font-size: 20px;
   letter-spacing: 0.5px;
 }
 h4 { //subtitle(+p), content(+h5 description as title)
@@ -83,37 +83,24 @@ p, li {
   }
 }
 
-@media (min-width: $screenXS) {
+@media (min-width: $screenS) {
   h1 { font-size: 32px; }
   h2 { font-size: 28px; }
   h3 { font-size: 22px; }
   h4 { font-size: 20px; }
 }
 
-@media (min-width: $screenS) {
+@media (min-width: $screenL) {
   h1 { font-size: 40px; }
   h2 { font-size: 32px; }
   h3 { font-size: 26px; }
   h4 { font-size: 22px; }
   h5 { font-size: 18px; }
-  h6 { font-size: 15px; }
-  p, li { font-size: 17px; }
-}
-
-@media (min-width: $screenM) {
-}
-
-@media (min-width: $screenL) {
-  h1 { font-size: 44px; }
-  h2 { font-size: 34px; }
-  h3 { font-size: 30px; }
-  h4 { font-size: 24px; }
-  h5 { font-size: 20px; }
   h6 { font-size: 16px; }
   p, li { font-size: 18px; }
 }
 
 @media (min-width: $screenXL) {
-  h1 { font-size: 48px; }
+  h1 { font-size: 44px; }
   h2 { font-size: 36px; }
 }

@@ -1,9 +1,9 @@
 {% for project in site.data.projects-more %}
     {% if project.id == include.content %}
-        <div id="{{ project.id }}" class="modal collapse">
-            <div class="modal-background" onmousemove="cursorShow('cursor-back')" onmouseout="cursorHide('cursor-back')" onclick="modalMode()" aria-expanded="true" data-toggle="collapse" data-target="#{{ project.id }}"></div>
-            <div class="modal-project-container container60 Grid Grid--middle" onclick="modalMode()" aria-expanded="true" data-toggle="collapse" data-target="#{{ project.id }}">
-                <div class="modal-close icon-close icon-hover"><span></span><span></span></div>
+        <div id="{{ project.id }}" class="modal fade">
+            <div class="modal-background" onmousemove="cursorShow('cursor-back')" onmouseout="cursorHide('cursor-back')" data-dismiss="modal"></div>
+            <div class="modal-project-container container60 Grid Grid--middle">
+                <div class="modal-close icon-close icon-hover" data-dismiss="modal"><span></span><span></span></div>
                 <!-- Template for other projects -->
                 <div class="modal-project-pic" style="background-image: url('{{ site.baseurl_root }}/img/others/modal-{{ project.id }}.jpg');"></div>
                 <div class="modal-project-content Grid-column Grid-column--spaceBetween">

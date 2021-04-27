@@ -41,6 +41,7 @@ tag :
   app : "App"
   web : "Web"
   webapp : "Web-App"
+  system : "SYSTEM"
   product : "Produkt Design"
   graphic : "Graphik Design"
   animation : "Animation"
@@ -50,14 +51,15 @@ info :
   company : Firma
   supervisor : Betreuer
   designer : Designer
-  role : Role
+  role : Aufgaben
+  more : mehr
 
 about : 
   intro : "Ich bin eine Produkt Designerin mit einem tiefen technischen Verständnis und einem guten Gespür für Zukunftstendenzen."
   web-title : "Webdesign/-entwicklung"
   web-text : "Fortgeschrittene Kenntnisse in HTML&CSS und Javascript. Mit Erfahrung in der Erstellung von Websites mit Blog-Frameworks Jekyll oder Online-Plattformen Wix, Webflow und Wordpress."
   app-title : "Digitales Produktdesign"
-  app-text : "Fachkenntnisse in der Erstellung von UX/UI-Design für Softwareprodukte. In der Lage sein, schnell Designstrategien vorzuschlagen und mit dem Agile/Scrum-Team zusammenzuarbeiten."
+  app-text : "Fachkenntnisse in der Erstellung von UX/UI-Design für Softwareprodukte. In der Lage sein, schnell Designstrategien vorzuschlagen und mit Agile/Scrum-Teams zusammenzuarbeiten."
   product-title : "Produktdesign"
   product-text : "Mit einem Hintergrund in Industriedesign und Produktdesign, um Produkte mit einer genaueren Perspektive den Benutzer passen zu machen."
   more : "Mehr Details in meinem "
@@ -66,7 +68,7 @@ myoncare :
   summary : "Digitale Gesundheitsplattform zur effizienten und bedarfsorientierten Patientenversorgung"
   info-timeframe : "04.2017 – 07.2020"
   info-company : "ONCARE GmbH"
-  info-role : "Senior Produkt & UI/UX Designer"
+  info-role : "UX Review, User Flows, Information Architechture, Wireframing, Prototyping, Usability Test, UI Design, Design System"
   overview-title : "Die Verbindung zwischen Patienten und ihren Gesundheitsversorgern durch myoncare"
   overview-text-1 : "myoncare ist ein umfassender digitaler Dienstleistung, die sich auf die Nachsorge und die patientenzentrierte Gesundheitsversorgung konzentriert, indem sie in Echtzeit und proaktiv auf gemeldete Abnormalitäten reagiert."
   overview-text-2 : "Während meiner letzten Tätigkeit als Senior Produkt & UI/UX Designer bei der ONCARE GmbH war ich für <mark>Recherche, Konzeption, Interaktionen, visuelles Design, Prototypen und Mockups</mark> verantwortlich und habe den kompletten Designprozess <mark>für die aktuelle Mobile App und Web-App Plattform</mark> durchgeführt. Die Missionen und Meilensteine, die ich während meiner Arbeitszeit erreicht habe, sind unten aufgeführt: "
@@ -118,7 +120,7 @@ shareco :
 yumiwi : 
   summary : "Onlineplattform zur einfachen Organisation eines Kochenevents"
   info-timeframe : "10.2015 – 01.2016"
-  info-supervisoer : "Prof. Diana Simon"
+  info-supervisor : "Prof. Diana Simon"
   info-designer : "Jie Ding, Johannes Hetzold, Kuan-Ju Bondes, Sandra Püschel"
   info-role : "User Journey, User Flows, Information Architechture, Wireframing, UI Design, Prototyping"
   overview-title : "Bringen Flüchtlinge und Gastgebergemeinschaften durch interessengesteuerte Vernetzung und Kulturaustausch einander näher."
@@ -141,3 +143,30 @@ yumiwi :
   reflection : ""
   reflection-title : ""
   reflection-text : ""
+
+kuckuck : 
+  summary : "Entwicklung einer Studie für Mitfahrgelegenheiten bis ins hohe Alter"
+  info-timeframe : "10.2014 – 01.2015"
+  info-supervisor : "Prof. Peter Laabs"
+  info-designer : "Christiane Felsberg, Christoph Uckermark, Franz Junghans, Jie Ding, Julius Plüschke, Kuan-Ju Pan, Luise Münzner"
+  info-role : "User Research, Product Concept, Interaction Design, Prototyping, Video Editing"
+
+luwood : 
+  summary : "Produktentwicklung inspiriert durch lokale Kultur"
+  info-timeframe : "05.2013 – 08.2013"
+  info-company : "OUTPUT Design Corp."
+  info-role : "Conception, Sketches, Prototyping, 3D-Modelling, Production File, Revision"
+
+mirak : 
+  summary : "Konzeptentwurf eines Mietsystems und einer Kochstation zum Mitnehmen"
+  info-timeframe : "10.2015 – 01.2016"
+  info-supervisor : "Helge Oder"
+  info-designer : "Jie Ding, Johannes Hetzodl, Kuan-Ju Pan, Sandra Püschel"
+  info-role : "User Research, Conception, Sketches, Prototyping"
+
+ohwhy : 
+  summary : "Konzept zur Stärkung des Familienzusammenhalts - Kinderkamera und elektronischer Bildschirm"
+  info-timeframe : "09.2009 – 05.2010 (Bachelor thesis)"
+  info-supervisor : "Min-Yuan Ma"
+  info-designer : "Kuan-Ju Pan, Yi-Her Hsu, Yu-Chun Chou"
+  info-role : "Research, Conception, Sketches, Prototyping, 3D-Modelling & Rendering, Production File, Revision"

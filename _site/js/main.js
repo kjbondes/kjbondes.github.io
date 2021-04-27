@@ -37,11 +37,9 @@ $(document).ready(function(){
     $('#mobile-nav').scrollTop = 0;
     if (menuOpen) {
       $('#mobile-nav').css('position', 'static');
-      $('#mobile-nav').css('overflow-y', 'auto');
       $('#mobile-nav').css('min-height', '100%');
     } else {
       $('#mobile-nav').css('position', 'fixed');
-      $('#mobile-nav').css('overflow-y', 'hidden');
       $('#mobile-nav').css('min-height', 'auto');
     }
   });
@@ -71,13 +69,6 @@ $(window).on('scroll', function() {
       }
   }
   prevScrollpos = currentScrollPos;
-})
-
-/* lock main-content in modal mode */
-$('.modal').on('shown', function(){
-  $('body').css('overflow', 'hidden');
-}).on('hidden', function(){
-  $('body').css('overflow', 'auto');
 })
 
 function objectShow(objectID) { 

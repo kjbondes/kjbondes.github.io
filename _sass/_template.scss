@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: none;
   position: fixed;
   pointer-events: none;
-  z-index: 100;
+  z-index: 1050; // same heirachy as modal
   .cursor {
     position: absolute;
     width: 80px;
@@ -323,22 +323,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .modal { // modal showed by toggle
   position: fixed;
-  overflow-y: scroll;
-  z-index: 100;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: $black-80;
-  @include animation(fade-in 0.4s);
+  overflow-y: scroll !important;
   .modal-background { // click background to end the modal mode
     position: fixed;
     cursor: none; // cursor icon-close
     z-index: -100;
-    left: 0;
-    right: 0;
     top: 0;
+    right: 0;
     bottom: 0;
+    left: 0;
+    background-color: $black-80;
   }
   .modal-project-container { 
     position: relative;
@@ -380,9 +374,19 @@ h1, h2, h3, h4, h5, h6, p {
       }
     }
   }
+  &#kuckuck {
+    .modal-project-pic {
+      background-position: 65% 35%;
+    }
+  }
   &#luwood {
     .modal-project-pic {
       background-position-y: 75%;
+    }
+    .icon-close {
+      span {
+        background: white;
+      }
     }
   }
   &#mirak {
@@ -435,6 +439,13 @@ h1, h2, h3, h4, h5, h6, p {
         }
       }
     }
+    &#luwood {
+      .icon-close {
+        span {
+          background: black;
+        }
+      }
+    }
   }
 }
 
@@ -477,6 +488,7 @@ h1, h2, h3, h4, h5, h6, p {
 #mobile-nav {
   display: block;
   padding: 10px 0;
+  overflow-y: auto;
   #mobile-menu {
     padding-bottom: 40px;
     background-color: white;
