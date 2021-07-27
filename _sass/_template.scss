@@ -157,12 +157,12 @@ mark {
   background-position: 100% 100%;
   @include transition(background-size 0.3s ease);
   &:hover {
-    //background-size: 100% 100%;
+    background-size: 100% 100%;
   }
 }
 h1, h2, h3, h4, h5, h6, p {
   &:hover {
-    //mark { background-size: 100% 100%; }
+    mark { background-size: 100% 100%; }
   }
 }
 /* cursor */
