@@ -1,37 +1,43 @@
 /* animation.scss */
 
 @media (min-width: $screenM) {
-    #title-group {
-        @include animation(fade-in 3s ease);
-        .white-box {
-            @include animation(title-fade-in 5s ease);
-        }
+    .title-group {
+        @include animation(title-fade-in 4s ease);
     }  
-    #sub-title {
-        @include animation(fade-in 3s ease 1s);
-        .white-box {
-            @include animation(subtitle-fade-in 3s ease);
+    .title-bg-strip {
+        .up {
+            @include animation(title-slide-in-left 2s ease-in-out);
         }
+        .down {
+            @include animation(title-slide-in-right 2s ease-in-out);
+        }
+    }
+    #sub-title {
+        @include animation(title-fade-in 6s ease);
     }
 }
 
-@include keyframes(fade-in) {
-    0% { opacity: 0 }
-    100% { opacity: 1 }
+@include keyframes (title-slide-in-left) {
+    0% { transform: translateX(-150%); width: 50%; opacity: 1; }
+    50% { transform: translateX(-5%); width: 100%; opacity: 1; }
+    75% { opacity: 1; }
+    100% { transform: translateX(0%); width: 70%; opacity: 0; }
+}
+@include keyframes (title-slide-in-right) {
+    0% { transform: translateX(150%); width: 50%; opacity: 1; }
+    50% { transform: translateX(5%); width: 100%; opacity: 1; }
+    75% { opacity: 1; }
+    100% { transform: translateX(0%); width: 70%; opacity: 0; }
 }
 @include keyframes(title-fade-in) {
-    0% { width: 100%; opacity: 1; }
-    50% { width: 0%; opacity: 1; }
-    100% { width: 0% }
+    0% { opacity: 0; }
+    45% { opacity: 0; }
+    100% { opacity: 1; }
 }
-@include keyframes(subtitle-fade-in) {
-    0% { width: 100%; opacity: 1; }
-    30% { width: 100%; }
-    100% { width: 0%; opacity: 1; }
-}
+
 @include keyframes(slide-in-bottom) {
-    0% {transform: translateY(100%);}
-    100% {transform: translateY(0%);}
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0%); }
 }
 
 #icon-menu {

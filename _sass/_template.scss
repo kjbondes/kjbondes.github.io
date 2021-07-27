@@ -157,12 +157,12 @@ mark {
   background-position: 100% 100%;
   @include transition(background-size 0.3s ease);
   &:hover {
-    background-size: 100% 100%;
+    //background-size: 100% 100%;
   }
 }
 h1, h2, h3, h4, h5, h6, p {
   &:hover {
-    mark { background-size: 100% 100%; }
+    //mark { background-size: 100% 100%; }
   }
 }
 /* cursor */
@@ -313,17 +313,48 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .icon-hover {
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 999px;
   background-color: transparent;
   @include transition(background-color .3s ease);
   &:hover {
     background-color: $main-color;
   }
 }
+.btn-hover, %btn-hover {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 999px;
+  &::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 999px;
+    background-color: $main-color;
+    width: 2.6em;
+    opacity: 0.5;
+    @include transition(all 0.4s ease-in-out);
+  }
+  &:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.btn-hover-white {
+  @extend %btn-hover;
+  z-index: 0;
+  &::before {
+    background-color: white !important;
+    width: 2em;
+  }
+}
 .tag {
   padding: 5px 15px;
   background-color: $white-50;
-  border-radius: 5px;
+  border-radius: 999px;
 }
 .modal { // modal showed by toggle
   position: fixed;

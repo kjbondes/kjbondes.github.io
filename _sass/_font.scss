@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Molengo');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 /* 100 Thin / 200 Extra Light / 300 Light / 400 Regular / 500 Medium / 600 Semibold / 700 Bold / 800 Extra Bold / 900 Black */
 
@@ -26,12 +28,13 @@
   font-weight: 400;
 }
 
-$font-main: "Molengo";
-$font-heading: "Philosopher";
+$font-main: "Molengo", sans-serif;
+$font-heading: "Philosopher", serif;
+$font-alt: "Mobtserrat", sans-serif;
 
 
 body {
-  font-family: $font-main, sans-serif;
+  font-family: $font-main;
   color: black;
 }
 h1, h2, h3, h4, h5, h6, p, br, ul, li {
