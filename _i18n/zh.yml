@@ -1,0 +1,35 @@
+general : 
+  last-updated : Last updated
+
+title : 
+  myoncare : myoncare
+  shareco : shareco
+  yumiwi : yumiwi
+  about : About me
+  privacy : Privacy
+
+nav : 
+  product : product
+  projects : work
+  about : about
+  resume : resume
+  lang : language
+  download-en : Download in English
+  download-de : Download in German
+  myoncare : "Degital healthcare platform"
+  shareco : "Concept of shared washing mashine"
+  yumiwi : "Online event-organization platform"
+
+home : 
+  hero-1 : "複雜的問題。"
+  hero-2 : "直覺的體驗。"
+  hero-3 : 
+  description : "我是潘冠如，一名產品設計師，目前定居於德國。 <br>我專注於設計<mark>數位</mark>與<mark>實體</mark>產品，將複雜的挑戰轉化為直覺、清晰的使用體驗。"
+  featured : "Featured projects"
+  more : "More work"
+  more-text : "Find out more work I did before"
+  more-note : "These projects are linked to outside pages and only German available."
+  contact-about : "Know more about me"
+  contact-mail : "Drop me a message"
+  view : "view project"
+  view-cursor : "view"

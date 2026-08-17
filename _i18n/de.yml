@@ -21,17 +21,17 @@ nav :
   yumiwi : "Onlineplattform zur <br/>Veranstaltungsorganisation"
 
 home : 
-  web : Web
-  app : App
-  product : Produkt
-  description : "Hallo! Ich bin Kuan-Ju Bondes - ein <mark>Produktdesigner</mark> wohnt in Deutschland. <br>Mit Erfahrung in <mark>Design</mark> und <mark>Usability</mark> für sowohl physische als auch digitale Produkte."
+  hero-1 : "Komplexe Probleme."
+  hero-2 : "Intuitive Lösungen."
+  hero-3 : 
+  description : "Ich bin Kuan-Ju Bondes, ein <mark>Product Designer</mark> aus Deutschland. <br>Ich entwickle <mark>digitale</mark> und <mark>physische</mark> Produkte, die komplexe Herausforderungen in intuitive Erlebnisse verwandeln."
   featured : "Vorgestellte Projekte"
   more : "Mehr Projekte"
   more-text : "Finden Sie mehr Arbeit hier"
   more-note : "Diese Projekte sind mit externen Seiten verlinkt und nur Deutsch verfügbar."
   contact-about : "Mehr über mich erfahren"
   contact-mail : "Mir eine Nachricht schreiben"
-  view : "Projekt ansehen"
+  view : "Projekt ansehen →"
   view-cursor : "an<br>sehen"
 
 tag : 
@@ -66,6 +66,7 @@ about :
 
 myoncare : 
   summary : "Digitale Gesundheitsplattform zur effizienten und bedarfsorientierten Patientenversorgung"
+  summary-text : ""
   info-timeframe : "04.2017 – 07.2020"
   info-company : "ONCARE GmbH"
   info-role : "UX Review, User Flows, Information Architechture, Wireframing, Prototyping, Usability Test, UI Design, Design System"
@@ -92,6 +93,7 @@ myoncare :
 
 shareco : 
   summary : "Konzeptentwurf einer individuellen, umweltfreundlichen und benutzerfreundlichen Waschmaschine zur gemeinschaftlichen Nutzung"
+  summary-text : ""
   info-timeframe : "03.2016 – 06.2016 (Masterarbeit)"
   info-supervisor : "Prof. Peter Laabs, Prof. Gerd Flohr"
   info-designer : "Kuan-Ju Bondes"
@@ -119,6 +121,7 @@ shareco :
 
 yumiwi : 
   summary : "Onlineplattform zur einfachen Organisation eines Kochenevents"
+  summary-text : ""
   info-timeframe : "10.2015 – 01.2016"
   info-supervisor : "Prof. Diana Simon"
   info-designer : "Jie Ding, Johannes Hetzold, Kuan-Ju Bondes, Sandra Püschel"

@@ -14,9 +14,10 @@ description :
                 <div class="down"></div>
             </div>
             <div class="title-group Grid-column">
-                <span class="title" onmousemove="cursorShow('cursor-web')" onmouseout="cursorHide('cursor-web')">{% t home.web %}. </span>
-                <span class="title" onmousemove="cursorShow('cursor-app')" onmouseout="cursorHide('cursor-app')">{% t home.app %}. </span>
-                <span class="title" onmousemove="cursorShow('cursor-product')" onmouseout="cursorHide('cursor-product')">{% t home.product %}.</span>
+                <span class="title" onmousemove="cursorShow('cursor-hero-1')" onmouseout="cursorHide('cursor-hero-1')">{% t home.hero-1 %} </span>
+                <br>
+                <span class="title" onmousemove="cursorShow('cursor-hero-2')" onmouseout="cursorHide('cursor-hero-2')">{% t home.hero-2 %} </span>
+                <!--span class="title" onmousemove="cursorShow('cursor-hero-3')" onmouseout="cursorHide('cursor-hero-3')">{% t home.hero-3 %}</span-->
             </div>
         </div>
         <div id="sub-title" class="transbox">
@@ -32,6 +33,7 @@ description :
                 <div id="home-{{ project.id }}" class="show-on-scroll">
                     <img id="project-logo" src="{{ site.baseurl_root }}/img/logo/{{ project.logo }}.svg" />
                     <h2>{% t project.summary %}</h2>
+                    <h4>{% t project.summary-text %}</h4>
                     <a href="{{ site.baseurl }}/projects/{{ project.id }}.html">
                         <h6><span class="text-hover out">{% t home.view %}</span></h6>
                         <!--h6 class="btn-hover text-hover out" style="margin-left: -10px;">{% t home.view %}</h6-->

@@ -186,19 +186,19 @@ h1, h2, h3, h4, h5, h6, p {
     @include transition(transform 0.3s ease);
   }
   /*
-  .cursor-web {
+  .cursor-hero-1 {
     z-index: -999;
     opacity: 0.5;
     @include transform(scale(2.8));
     background-color: $shareco;
   }
-  .cursor-app {
+  .cursor-hero-2 {
     z-index: -999;
     opacity: 0.5;
     @include transform(scale(2.3));
     background-color: $myoncare;
   }
-  .cursor-product {
+  .cursor-hero-3 {
     z-index: -999;
     opacity: 0.5;
     @include transform(scale(3.5));

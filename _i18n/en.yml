@@ -21,17 +21,17 @@ nav :
   yumiwi : "Online event-organization platform"
 
 home : 
-  web : web
-  app : app
-  product : product
-  description : "Hello! I'm Kuan-Ju Bondes – a <mark>Product Designer</mark> based in Germany. <br>With experience in <mark>design</mark> and <mark>usability</mark> for both physical and digital products."
+  hero-1 : "Complex problems."
+  hero-2 : "Simple experiences."
+  hero-3 : 
+  description : "Hello! I'm Kuan-Ju Bondes, a <mark>Product Designer</mark> based in Germany. <br>I design thoughtful <mark>digital</mark> and <mark>physical</mark> products that turn <mark>complex challenges</mark> into intuitive experiences."
   featured : "Featured projects"
   more : "More work"
   more-text : "Find out more work I did before"
   more-note : "These projects are linked to outside pages and only German available."
   contact-about : "Know more about me"
   contact-mail : "Drop me a message"
-  view : "view project"
+  view : "view project →"
   view-cursor : "view"
 
 tag : 
@@ -65,7 +65,8 @@ about :
   more : "More details in my "
 
 myoncare : 
-  summary : "Digital healthcare platform for efficient and demand-oriented patient care"
+  summary : "Digital healthcare platform for connected patient care."
+  summary-text : "Designed and developed user interfaces and workflows for a digital healthcare platform, supporting patients and healthcare professionals across web and mobile applications."
   info-timeframe : "04.2017 – 07.2020"
   info-company : "ONCARE GmbH"
   info-role : "UX Review, User Flows, Information Architechture, Wireframing, Prototyping, Usability Test, UI Design, Design System"
@@ -91,7 +92,8 @@ myoncare :
   reflection-text-3 : "Due to the confidentiality, there are only few pictures and features allowed to show. For more information, please visit websites of the company <a href='https://www.myoncare.com/' target='_blank' class='text-hover out'>ONCARE GmbH</a> or the sister company <a href='https://www.convien.com/' target='_blank' class='text-hover out'>CONVIEN GmbH</a>."
 
 shareco : 
-  summary : "Concept design of an individual, environmentally friendly and user-friendly washing machine for shared use"
+  summary : "Product and service concept for shared laundry."
+  summary-text : "Designed a user-centered washing machine and digital interface for shared living environments, combining physical product design with a connected digital experience."
   info-timeframe : "03.2016 – 06.2016 (Master thesis)"
   info-supervisor : "Prof. Peter Laabs, Prof. Gerd Flohr"
   info-designer : "Kuan-Ju Bondes"
@@ -118,7 +120,8 @@ shareco :
   reflection-text : "Reflection text"
  
 yumiwi : 
-  summary : "Online platform for easy organization of a cooking event"
+  summary : "Digital platform for organizing social cooking events."
+  summary-text : "Designed the user experience and interface of a platform that enables people to create, discover, and participate in cooking events."
   info-timeframe : "10.2015 – 01.2016"
   info-supervisor : "Prof. Diana Simon"
   info-designer : "Jie Ding, Johannes Hetzold, Kuan-Ju Bondes, Sandra Püschel"
